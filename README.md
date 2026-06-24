@@ -1,12 +1,13 @@
 <p align="center">
-  <img src="icons/incol.png" alt="INCOL" height="60"/>
+  <img src="icons/images.png" alt="WHS" height="60"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="icons/phenoscript.png" alt="Tarasov Lab" height="60"/>
+  <img src="icons/phenoscript.png" alt="phenoscript" height="60"/>
 </p>
 
-# Workshop: Making Species Descriptions Computable Using Phenoscript
 
-May 19–21, 2026
+# Workshop: From Species Descriptions to Computable Phenotypes: An Introduction to Phenoscript and Ontologies
+
+30 June 2026, 12:00 GMT/UTC
 
 > 3-day online workshop · ~3 hours per day · with homework assignments
 
