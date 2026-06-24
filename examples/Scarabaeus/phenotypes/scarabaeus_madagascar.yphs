@@ -1,0 +1,305 @@
+
+
+
+OTU = { #// OTUName:  Scarabaeus viettei
+
+
+  DATA = {
+
+    #>>>YAML described_species
+    described_species:
+        .id: scarabaeus_viettei
+        .rdfs-label: 'Scarabaeus viettei'
+        .gbif_id: 'https://www.gbif.org/species/4997091'
+        .dwc-Catalog_Number:
+            - 'http://id.luomus.fi/GZ.15821'
+        .is_a:
+            - uberon-male_organism
+            - uberon-adult_organism
+            - dwc-Preserved_Specimen
+    #<<<YAML
+
+    }
+
+  TRAITS = {
+    
+    #--------
+    # Body.
+    #--------
+
+    # Body oval shaped; cuticle black, shiny, antennae reddish brown;
+    this >> (pato-ovate, pato-black, pato-glistening);
+    this > aism-antenna:id-06aa08 >> pato-red_brown;
+
+    #legs, lateral and ventral surface with reddish brown setae.
+    this > aism-insect_leg > (bspo-lateral_region:id-d8e098, bspo-ventral_region:id-ec5ebd);
+        bspo-lateral_region:id-d8e098 > uberon-anatomical_collection .ro-has_member aism-cuticular_seta >> pato-red_brown;
+        bspo-ventral_region:id-ec5ebd > uberon-anatomical_collection .ro-has_member aism-cuticular_seta >> pato-red_brown;
+    
+    #Length: 21,5 mm.
+    #>>>YAML absolute_measurement
+    absolute_measurement:
+        .measured_entity: this
+        .measured_quality: pato-length
+        .value: 21.5
+        .unit: unit-millimeter
+    #<<<YAML
+    
+    #--------
+    #Head.
+    #--------
+
+    #Genal margin approximately right-angled posteriorly, acutely angled and protruding anteriorly;
+    this > aism-gena:id-02ec81 > bspo-posterior_margin >> aism-right-angled; 
+        aism-gena:id-02ec81 > bspo-anterior_region >> (pato-protruding, aism-acutely_angular);
+
+    #lateral margin of head sharply notched at clypeogenal junction;
+    this > aism-insect_head > bspo-lateral_margin:id-353038 .ro-adjacent_to colao-genoclypeal_sulcus;
+        bspo-lateral_margin:id-353038 >> aism-acutely_notched;    
+
+    #clypeal margin with four symmetrical, acute teeth;
+    this > aism-clypeus:id-46882f > bspo-anatomical_margin:id-fd69f9 > aism-cuticular_tooth .phs-has_element_count 4;
+        bspo-anatomical_margin:id-fd69f9 > aism-cuticular_tooth:id-9c4278 >> (aism-serial_position_id_1, pato-bilaterally_paired, aism-acutely_angular);
+        bspo-anatomical_margin:id-fd69f9 > aism-cuticular_tooth:id-0f5b66 >> (aism-serial_position_id_2, pato-bilaterally_paired, aism-acutely_angular);
+        aism-cuticular_tooth:id-0f5b66 .aism-lateral_to aism-cuticular_tooth:id-9c4278;
+
+    #clypeal margin between lateral clypeal teeth acute and sharp;
+    this > aism-clypeus:id-46882f > bspo-antero-medial_margin >> aism-acutely_notched;
+    this > aism-clypeus:id-46882f > bspo-anatomical_margin:id-9e09d8 .aism-lateral_to aism-cuticular_tooth:id-9c4278; 
+        bspo-anatomical_margin:id-9e09d8 .aism-medial_to aism-cuticular_tooth:id-0f5b66;
+        bspo-anatomical_margin:id-9e09d8 >> aism-acutely_notched;
+
+    #frons protruding medially, with two short transverse carinae;
+    this > aism-frons:id-eb4f3e >> pato-protruding;
+        aism-frons:id-eb4f3e > aism-cuticular_carina >> (pato-bilaterally_paired, pato-transverse_orientation, pato-decreased_length);
+
+    #surface of vertex finely granulated;
+    this > aism-vertex > uberon-anatomical_collection .ro-has_member aism-cuticular_granule;
+
+    #genae granulated medially, wrinkled laterally; clypeus wrinkled anteriorly;
+    this > aism-gena:id-02ec81 > bspo-medial_region > uberon-anatomical_collection .ro-has_member aism-cuticular_granule;
+        aism-gena:id-02ec81 > bspo-lateral_region >> pato-wrinkled;
+    this > aism-clypeus:id-46882f > bspo-anterior_region >> pato-wrinkled; 
+
+    #antennae with 9 antennomeres;
+        aism-antenna:id-06aa08 > aism-antennomere .phs-has_element_count 9; 
+        aism-antenna:id-06aa08 > colao-antennal_club > (aism-flagellomere_5, aism-flagellomere_6, aism-flagellomere_7);
+
+    #glossa, maxilla and epipharynx present;
+    this > (aism-glossa, aism-epipharynx, aism-insect_maxilla);
+
+    #maxillary palpi with 4 palpomeres;
+    this > aism-maxillary_palpus > aism-maxillary_palpomere .phs-has_element_count 4;
+
+    #labial palpi with 3 palpomeres.
+    this > aism-labial_palpus > aism-labial_palpomere .phs-has_element_count 3;
+
+    #--------
+    #Pronotum.
+    #--------
+
+    #Pronotum wider than long, evenly convex;
+    this > aism-pronotum:id-1754fa >> pato-width |>| pato-length << aism-pronotum:id-1754fa;
+        aism-pronotum:id-1754fa > bspo-dorsal_region >> pato-convex;
+
+    #anterolateral pronotal angles sharp, obliquely directed anteriorly;
+        aism-pronotum:id-1754fa > bspo-antero-lateral_region > aism-anatomical_angle >> (pato-sharp, pato-oblique_orientation); 
+    
+    #lateral margin evenly curved on the whole, lateral pronotal carina crenulated by a row of setigerous punctures;
+        aism-pronotum:id-1754fa > bspo-lateral_margin:id-2fd378 >> pato-curved;
+        bspo-lateral_margin:id-2fd378 > aism-cuticular_carina:id-c37133 > uberon-anatomical_row .ro-has_member aism-setigerous_cuticular_puncture;
+        aism-cuticular_carina:id-c37133 >> pato-serrated;
+    
+    #posterior margin curved, not grooved, with row of setigerous punctures;
+        aism-pronotum:id-1754fa > bspo-posterior_margin:id-f02d2b >> pato-curved;
+        bspo-posterior_margin:id-f02d2b !> aism-cuticular_groove;
+        aism-pronotum:id-1754fa > uberon-anatomical_row:id-0c072b .ro-coincident_with bspo-posterior_margin:id-f02d2b;
+        uberon-anatomical_row:id-0c072b .ro-has_member aism-setigerous_cuticular_puncture;
+    
+    #pronotal disc with simple punctures,
+    this > colao-pronotal_disc:id-621e18 > uberon-anatomical_collection:id-34eb5b .ro-has_member aism-cuticular_puncture:id-159e78;
+    
+    #separated approximately by 7 puncture diameters;
+    #>>>YAML relative_measurement
+    relative_measurement:
+      .measured_trait:
+        .entity: uberon-anatomical_collection:id-34eb5b
+        .quality: aism-interpunctural_distance
+      .unit:
+        .entity: aism-cuticular_puncture:id-159e78
+        .quality: pato-diameter
+      .value: 7
+    #<<<YAML
+
+    
+    
+    #--------
+    #Elytra and hind wings.
+    #--------
+    
+    #Elytra with 9 striae,
+    this > colao-elytron:id-02b6a7 > colao-elytral_stria .phs-has_element_count 9;
+
+    #interstriae 8 and 9 carinated proximally along striae 7 and 8, respectively;
+    this > colao-elytral_interstria_8 > bspo-proximal_region > aism-cuticular_carina .ro-adjacent_to colao-elytral_stria_7 < this;
+    this > colao-elytral_interstria_9 > bspo-proximal_region > aism-cuticular_carina .ro-adjacent_to colao-elytral_stria_8 < this;
+    
+    #elytral surface microreticulate,
+        colao-elytron:id-02b6a7 > bspo-dorsal_region >> aism-microreticulate;
+   
+    #interstriae with sparse punctures, their surface covered with minute flat granules;
+        colao-elytron:id-02b6a7 > colao-elytral_interstria:id-b19f79 > uberon-anatomical_collection:id-3baacc .ro-has_member aism-cuticular_puncture;
+        uberon-anatomical_collection:id-3baacc >> pato-sparse;
+        colao-elytral_interstria:id-b19f79 > uberon-anatomical_collection .ro-has_member aism-cuticular_granule >> (pato-decreased_size, pato-flattened);
+    
+    #scutellar shield concealed.
+    this > colao-scutellar_shield >> pato-concealed;
+    
+    #Hind wings present and normally developed.
+    this > aism-hind_wing >> (pato-present, pato-normal); 
+        
+    #--------
+    #Ventral body surface.
+    #--------
+
+    #Posterior longitudinal hypomeral carina and anterior hypomeral carina absent;
+    this > colao-hypomeron > bspo-posterior_region !> aism-cuticular_carina;
+    this > colao-hypomeron > bspo-anterior_region !> aism-cuticular_carina;
+
+    #abdomen with 8 sternites,
+    this > aism-insect_abdomen > aism-abdominal_sternite .phs-has_element_count 8;
+    
+    #8th abdominal sternite with two symmetric grooves along posterolateral margin;
+    this > aism-abdominal_sternite_VIII:id-5b27e8 > aism-cuticular_groove:id-2b95eb .ro-coincident_with bspo-postero-lateral_margin < aism-abdominal_sternite_VIII:id-5b27e8;
+        aism-cuticular_groove:id-2b95eb >> pato-bilaterally_paired;
+
+    #--------
+    #Tergite VIII.
+    #--------
+    
+    #Tergite VIII evenly convex, microreticulate, with scattered simple punctures;
+    this > aism-abdominal_tergite_VIII:id-16cd8b >> (pato-convex, aism-microreticulate);
+        aism-abdominal_tergite_VIII:id-16cd8b > uberon-anatomical_collection:id-a1505b .ro-has_member aism-cuticular_puncture;
+        uberon-anatomical_collection:id-a1505b >> pato-sparse;
+
+    #anterior groove and carina present;
+        aism-abdominal_tergite_VIII:id-16cd8b > bspo-anterior_margin > (aism-cuticular_groove, aism-cuticular_carina);
+
+    #lateral bead expanded posteriorly.
+        aism-abdominal_tergite_VIII:id-16cd8b > aism-cuticular_groove:id-9cc351 .ro-coincident_with bspo-lateral_margin < aism-abdominal_tergite_VIII:id-16cd8b;
+        aism-cuticular_groove:id-9cc351 > bspo-posterior_region >> pato-increased_width;
+
+    #--------
+    #Legs.
+    #--------
+
+    #Tarsi with 5 segments;
+    this > aism-protarsus > aism-protarsomere .phs-has_element_count 5;
+    this > aism-mesotarsus > aism-mesotarsomere .phs-has_element_count 5;
+    this > aism-metatarsus > aism-metatarsomere .phs-has_element_count 5;
+
+    #protibiae curved, with four lateral teeth, fourth tooth very small;
+    this > aism-protibia:id-f2af3d >> pato-curved;
+        aism-protibia:id-f2af3d > aism-cuticular_tooth:id-b076d8 .phs-has_element_count 4;
+        aism-protibia:id-f2af3d > aism-cuticular_tooth >> (aism-serial_position_id_4, pato-decreased_size);
+
+    #dorsal protibial margin between lateral protibial teeth scalloped;
+        aism-protibia:id-f2af3d > bspo-dorsal_margin:id-b282f8 .ro-adjacent_to aism-cuticular_tooth:id-b076d8;
+        bspo-dorsal_margin:id-b282f8 >> pato-scalloped;
+
+    #ventral protibial margin serrated;
+        aism-protibia:id-f2af3d > bspo-ventral_margin >> pato-serrated;
+
+    #anterior protibial margin serrated proximally;
+        aism-protibia:id-f2af3d > bspo-antero-proximal_margin > aism-cuticular_carina >> pato-serrated;
+
+    #anteroventral margin of profemur toothed distally;
+    this > aism-profemur > bspo-antero-ventral_region > aism-cuticular_carina > bspo-distal_region > aism-cuticular_tooth;
+    
+    #meso- and metatibia with apical spur fused with tibia;
+    this  > aism-mesotibia:id-296644 > aism-cuticular_spur >> pato-fused_with:id-748ca8 .ro-towards aism-mesotibia:id-296644;
+        pato-fused_with:id-748ca8 .ro-has_modifier pato-increased_magnitude;
+    this  > aism-metatibia:id-0495d1 > aism-cuticular_spur >> pato-fused_with:id-205308 .ro-towards aism-metatibia:id-0495d1;
+        pato-fused_with:id-205308 .ro-has_modifier pato-increased_magnitude;
+    
+    #anterior surface of mesofemur with many setigerous cuticular punctures,
+    this > aism-mesofemur:id-28ed57 > bspo-anterior_region > uberon-anatomical_collection .ro-has_member aism-setigerous_cuticular_puncture;
+    
+    #ventral margin with setigerous punctures, dorsal margin with setigerous punctures only distally;
+        aism-mesofemur:id-28ed57 > bspo-ventral_margin > uberon-anatomical_collection .ro-has_member aism-setigerous_cuticular_puncture;
+        aism-mesofemur:id-28ed57 > bspo-dorso-distal_margin > uberon-anatomical_collection .ro-has_member aism-setigerous_cuticular_puncture;
+    
+    #mesotibia with posteroventral, anteroventral, anterodorsal and posterodorsal carinae bearing setae;
+    this > aism-mesotibia:id-134188 > bspo-postero-ventral_margin > aism-cuticular_carina > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    this > aism-mesotibia:id-134188 > bspo-antero-ventral_margin > aism-cuticular_carina > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    this > aism-mesotibia:id-134188 > bspo-antero-dorsal_margin > aism-cuticular_carina > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    this > aism-mesotibia:id-134188 > bspo-postero-dorsal_margin > aism-cuticular_carina > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    
+    #dorsal surface of mesotibia with two longitudinal carinae, the proximal carina longer;
+        aism-mesotibia:id-296644 > bspo-dorso-proximal_margin > aism-cuticular_carina >> pato-length |>| pato-length << aism-cuticular_carina < bspo-dorso-distal_margin < aism-mesotibia:id-296644;
+    
+    #anterior surface of metafemur with row of setigerous punctures,
+    this > aism-metafemur:id-8b0a41 > bspo-anterior_region > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    
+    #dorsal margin with granulate setigerous punctures, ventral margin with setigerous punctures only proximally;
+        aism-metafemur:id-8b0a41 > bspo-dorsal_margin > uberon-anatomical_collection .ro-has_member aism-granulate_setigerous_cuticular_puncture;
+        aism-metafemur:id-8b0a41 > bspo-ventro-proximal_margin > uberon-anatomical_collection .ro-has_member aism-granulate_setigerous_cuticular_puncture;
+    
+    #metatibia with posteroventral, anteroventral, anterodorsal and posterodorsal carinae bearing setae,
+    this > bspo-postero-ventral_margin > aism-cuticular_carina > uberon-anatomical_row:id-d025a7 .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    this > bspo-antero-ventral_margin > aism-cuticular_carina > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    this > bspo-antero-dorsal_margin > aism-cuticular_carina > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    this > bspo-postero-dorsal_margin > aism-cuticular_carina > uberon-anatomical_row .ro-has_member aism-simple_setigerous_cuticular_puncture;
+    
+    #setae densest on distal region of posteroventral carina;
+        uberon-anatomical_row:id-d025a7 > bspo-distal_region >> aism-component_density |>| aism-component_density << bspo-proximal_region < uberon-anatomical_row:id-d025a7;
+    
+    #dorsal surface of metatibia with two setose longitudinal carinae of equal length;
+        aism-metatibia:id-0495d1 > bspo-dorsal_region:id-7f48a8 > aism-cuticular_carina:id-e86ba8 >> aism-serial_position_id_1;
+        bspo-dorsal_region:id-7f48a8 > aism-cuticular_carina:id-6fff28 >> aism-serial_position_id_2;
+        aism-cuticular_carina:id-e86ba8 >> pato-length .ro-similar_in_magnitude_relative_to pato-length << aism-cuticular_carina:id-6fff28;
+        aism-cuticular_carina:id-e86ba8 > uberon-anatomical_collection .ro-has_member aism-setigerous_cuticular_puncture;
+        aism-cuticular_carina:id-6fff28 > uberon-anatomical_collection .ro-has_member aism-setigerous_cuticular_puncture;
+
+    #--------
+    #Genitalia.
+    #--------
+
+    #Parameres asymmetrical,
+    this > aism-parameres:id-a608b1 >> pato-asymmetrical;
+
+    #dorsal margin concave in lateral view;
+        aism-parameres:id-a608b1 > bspo-dorsal_margin >> pato-concave;
+
+    #ventral margin of parameres obtusely angled, strongly sinuated distally in lateral view;
+        aism-parameres:id-a608b1 > bspo-ventral_margin >> pato-obtuse;
+        aism-parameres:id-a608b1 > bspo-ventro-distal_margin >> pato-concave;
+
+    #dorso-distal region of parameres obtusely angled in lateral view;
+        aism-parameres:id-a608b1 > bspo-dorso-distal_margin >> aism-obtusely_angular;
+
+    #distal parameral end flattened dorsoventrally;
+        aism-parameres:id-a608b1 > bspo-distal_region >> pato-dorso-ventrally_flattened;
+
+    #ventral margin of left paramere toothed;
+    this > aism-left_paramere > bspo-ventral_margin > aism-cuticular_tooth;
+
+    #lamella copulatrix absent;
+    this > aism-endophallus !> colao-lamella_copulatrix;
+
+    #frontolateral peripheral endophallite flattened, elongated, notched distally;
+    this > colao-frontolateral_peripheral_endophallite:id-449b25 >> (pato-flattened, pato-elongated);
+        colao-frontolateral_peripheral_endophallite:id-449b25 > bspo-distal_region >> pato-notched;
+
+    #axial and subaxial endophallites present;
+    this > (colao-axial_endophallite, colao-subaxial_endophallite);
+
+    #superior right peripheral endophallite with a ring-shaped extremity;
+    this > colao-superior_right_peripheral_endophallite > bspo-lateral_region >> pato-ring_shaped;
+    
+    #distal region of endophallus with a raspula with very long spines;
+    this > colao-raspula > aism-cuticular_spine >> (pato-multiple, pato-elongated);
+
+    }
+
+}
