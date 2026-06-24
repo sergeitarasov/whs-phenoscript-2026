@@ -5,7 +5,7 @@
 </p>
 
 
-# Workshop 
+# Welcome to the Workshop!
 
 # From Species Descriptions to Computable Phenotypes: An Introduction to Phenoscript and Ontologies
 
@@ -31,10 +31,31 @@ Full course materials  are available on the **[Workshop Wiki](https://github.com
 | Hong Kong | 20:00 HKT |
 
 
-
 ## Prerequisites
 
-This should be done before the course:
+This should be done before the workshop:
+
+
+- Install [VS Code](https://code.visualstudio.com) (for writing Phenoscript), [Docker](https://www.docker.com/products/docker-desktop/) (to run the necessary software), and [Protégé](https://protege.stanford.edu) (ontology editor). All of them are free.
+
+- Innstall Phenoscript plugin for VS Conde. The instruction is [here]()
+
+- Highly recommended: complete the [Pizza Ontology tutorial](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial) to understand what an ontology is (it takes ca. 1/2 day)
+- Important Reading:
+    - Insect Anatomy Ontology — <https://doi.org/10.1093/sysbio/syad025>
+    - Phenoscript and semantic descriptions — <https://bdj.pensoft.net/article/121562/>
+
+- Workshop materials will be available on [here](https://github.com/sergeitarasov/phenoscript-workshop-incol-2026)
+
+
+- Join the Slack channel for discussion (link privately shared)
+- Get [ORCID ID](https://orcid.org) if you do not have one. 
+- Think of five traits of you favorite species that you would like to code using Phenoscript during the workshop have it available with you.
+
+
+## Prerequisites OLD
+
+This should be done before the workshop:
 
 - Select a textual description (preferable a published one) of a species that you would like to represent using Phenoscript during the course, and have it available with you.
 - Install [VS Code](https://code.visualstudio.com) (for writing Phenoscript), [Docker](https://www.docker.com/products/docker-desktop/) (to run the necessary software), and [Protégé](https://protege.stanford.edu) (ontology editor). All of them are free.
