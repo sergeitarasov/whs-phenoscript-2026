@@ -20,6 +20,7 @@
 Full course materials  are available on the **[Workshop Wiki](https://github.com/sergeitarasov/whs-phenoscript-2026/wiki)**.
 
 
+## Workshop Time Zones
 
 | City | Local time |
 |---|---|
