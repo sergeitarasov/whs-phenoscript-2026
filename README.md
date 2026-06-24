@@ -33,40 +33,30 @@ Full course materials  are available on the **[Workshop Wiki](https://github.com
 
 ## Prerequisites
 
-This should be done before the workshop:
+Please complete these steps before the workshop:
+
+- **Install required software** (all free):
+  - [VS Code](https://code.visualstudio.com) — for writing Phenoscript
+  - [Docker](https://www.docker.com/products/docker-desktop/) — to run the necessary software
+  - [Protégé](https://protege.stanford.edu) — ontology editor
+
+- **Install the Phenoscript extension for VS Code** — follow the [installation instructions](https://github.com/sergeitarasov/whs-phenoscript-2026/wiki/install)
+
+- **Get an [ORCID ID](https://orcid.org)** if you do not have one
+
+- **Prepare trait data** — identify five traits of your favorite species that you would like to code using Phenoscript during the workshop and have them available
+
+- **Join the Slack channel** for discussion (link privately shared)
 
 
-- Install [VS Code](https://code.visualstudio.com) (for writing Phenoscript), [Docker](https://www.docker.com/products/docker-desktop/) (to run the necessary software), and [Protégé](https://protege.stanford.edu) (ontology editor). All of them are free.
+## Highly recommended before the workshop
 
-- Innstall Phenoscript plugin for VS Conde. The instruction is [here]()
+- **Complete the [Pizza Ontology tutorial](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial)** — understand what an ontology is (approximately half a day)
 
-- Highly recommended: complete the [Pizza Ontology tutorial](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial) to understand what an ontology is (it takes ca. 1/2 day)
-- Important Reading:
-    - Insect Anatomy Ontology — <https://doi.org/10.1093/sysbio/syad025>
-    - Phenoscript and semantic descriptions — <https://bdj.pensoft.net/article/121562/>
+- **Important reading:**
+  - Insect Anatomy Ontology — <https://doi.org/10.1093/sysbio/syad025>
+  - Phenoscript and semantic descriptions — <https://bdj.pensoft.net/article/121562/>
 
-- Workshop materials will be available on [here](https://github.com/sergeitarasov/phenoscript-workshop-incol-2026)
-
-
-- Join the Slack channel for discussion (link privately shared)
-- Get [ORCID ID](https://orcid.org) if you do not have one. 
-- Think of five traits of you favorite species that you would like to code using Phenoscript during the workshop have it available with you.
-
-
-## Prerequisites OLD
-
-This should be done before the workshop:
-
-- Select a textual description (preferable a published one) of a species that you would like to represent using Phenoscript during the course, and have it available with you.
-- Install [VS Code](https://code.visualstudio.com) (for writing Phenoscript), [Docker](https://www.docker.com/products/docker-desktop/) (to run the necessary software), and [Protégé](https://protege.stanford.edu) (ontology editor). All of them are free.
-- Get [ORCID ID](https://orcid.org) if you do not have one. 
-- Join the Slack channel for discussion (link privately shared)
-- Highly recommended: complete the [Pizza Ontology tutorial](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial) to understand what an ontology is (it takes ca. 1/2 day)
-- Important Reading:
-    - Insect Anatomy Ontology — <https://doi.org/10.1093/sysbio/syad025>
-    - Phenoscript and semantic descriptions — <https://bdj.pensoft.net/article/121562/>
-
-- Workshop materials will be available on [here](https://github.com/sergeitarasov/phenoscript-workshop-incol-2026)
 
 
 
