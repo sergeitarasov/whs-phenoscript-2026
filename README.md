@@ -5,19 +5,19 @@
 </p>
 
 
-# Workshop: 
+# Workshop 
 
 # From Species Descriptions to Computable Phenotypes: An Introduction to Phenoscript and Ontologies
 
 30 June 2026, 12:00 GMT/UTC
 
-> 3-day online workshop · ~3 hours per day · with homework assignments
+> 3-hour online workshop
 
 ---
 
 ## Materials
 
-Full course materials  are available on the **[Workshop Wiki](https://github.com/sergeitarasov/phenoscript-workshop-incol-2026/wiki)**.
+Full course materials  are available on the **[Workshop Wiki](https://github.com/sergeitarasov/whs-phenoscript-2026/wiki)**.
 
 
 
@@ -51,10 +51,10 @@ This should be done before the course:
 
 ## Organizers
 
-- [Instituto Nacional de Coleoptera](https://incol.ufmt.br/)
-- Diego Rodrigues (INCOL)
-- Adaiane Jacobina (INCOL)
-- Marcely Valois (INCOL)
+- [Willi Hennig Society](https://cladistics.org/)
+- Amrita Srivathsan (WHS)
+- Santiago Catalano (WHS)
+- Ambrosio Torres Galvis (WHS)
 
 
 
@@ -65,8 +65,4 @@ This should be done before the course:
 - [Jennifer Girón](https://sites.google.com/view/jcgiron/home) (Museum at Texas Tech University)
 
 ## Funding
-Nacional de Coleoptera (INCol) an INCT (National Institute of Science and Technology) by Brazi's National Council for Scientifc and Technological Development (CNPq) (408430/2024-9). Research Council of Finland (361983) to ST.
-
-## License
-
-See [LICENSE](LICENSE).
+Research Council of Finland (361983) to ST.
