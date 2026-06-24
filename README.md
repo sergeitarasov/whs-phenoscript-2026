@@ -47,10 +47,12 @@ Please complete these steps before the workshop:
 
 - **Prepare trait data** — identify five traits of your favorite species that you would like to code using Phenoscript during the workshop and have them available
 
-- **Join the Slack channel** for discussion (link privately shared)
+
 
 
 ## Highly recommended before the workshop
+
+- **Join OntoTraits Slack** for discussion (link privately shared)
 
 - **Complete the [Pizza Ontology tutorial](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial)** — understand what an ontology is (approximately half a day)
 
