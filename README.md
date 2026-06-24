@@ -21,13 +21,14 @@ Full course materials  are available on the **[Workshop Wiki](https://github.com
 
 
 
-## Schedule
-
-| Day | Date | Topic | Time (Brasília, BRT) | Time (Helsinki, EEST) |
-|-----|------|-------|----------------------|-----------------------|
-| 1 | Tuesday, May 19 | Introduction to Ontologies & Phenoscript | 09:00–12:00 | 15:00–18:00 |
-| 2 | Wednesday, May 20 | Making Semantic Descriptions & Discussion | 09:00–12:00 | 15:00–18:00 |
-| 3 | Thursday, May 21 | Making & Querying Semantic Descriptions | 09:00–12:00 | 15:00–18:00 |
+| City | Local time |
+|---|---|
+| GMT/UTC | 12:00 |
+| New York | 08:00 EDT |
+| Buenos Aires | 09:00 ART |
+| Helsinki | 15:00 EEST |
+| New Delhi | 17:30 IST |
+| Hong Kong | 20:00 HKT |
 
 
 
@@ -65,4 +66,4 @@ This should be done before the course:
 - [Jennifer Girón](https://sites.google.com/view/jcgiron/home) (Museum at Texas Tech University)
 
 ## Funding
-Research Council of Finland (361983) to ST.
+Research Council of Finland (361983).
