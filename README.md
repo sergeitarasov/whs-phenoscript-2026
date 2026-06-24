@@ -5,7 +5,9 @@
 </p>
 
 
-# Workshop: From Species Descriptions to Computable Phenotypes: An Introduction to Phenoscript and Ontologies
+# Workshop: 
+
+# From Species Descriptions to Computable Phenotypes: An Introduction to Phenoscript and Ontologies
 
 30 June 2026, 12:00 GMT/UTC
 
