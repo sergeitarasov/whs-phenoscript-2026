@@ -41,9 +41,9 @@ This approach builds upon previous standardized frameworks, such as those docume
 ---
 
 
-## Semantic Statements
+## Semantic statements
 
-In the **Entity–Quality (EQ)** model, a morphological trait is expressed as a **structure** linked to a **quality**.
+In the **Entity–Quality (EQ)** model, a morphological trait is expressed as a triplet linking a **structure** to a **quality**.
 
 It is convenient to think of them as graphs — **Knowledge Graphs**.
 
@@ -57,9 +57,9 @@ aism-fore_leg .ro-has_characteristic pato-red;
 ---
 
 
-## Nodes: `N`
+## Nodes (`N`)
 
-Three node types:
+Four node types:
 
 | Type | Description | Example |
 |------|-------------|---------|
@@ -69,13 +69,29 @@ Three node types:
 | **String node** | Free text in quotes | `'Helictopleurus sicardi'` |
 
 ```py
-uberon-male_organism .rdfs-label 'Helictopleurus sicardi';
+uberon-male_organism .bfio-has_part aism-protibia;
 uberon-male_organism .iao-has_measurement_value 2.0;
+uberon-male_organism .rdfs-label 'Helictopleurus sicardi';
 ```
 
 ---
 
-## Edges: `.E`
+## Nodes: classes
+
+- **Entity**: something that can be referred to as a distinct thing
+  - **Material**: protibia, anterior region, etc. 
+  - **Immaterial**: anatomical line, body axis, etc.
+
+- **Quality**: an intrinsic feature of an entity
+  - **Value**: red, curved, flattened, etc.
+  - **Relational**: distal to, fused with, etc.
+
+---
+
+
+## Edges ('.E')
+
+They represent **relationships** between nodes (*e.g.*, part of, has characteristic, encircles, etc.).
 
 Three edge types corresponding to OWL property types:
 
@@ -85,23 +101,43 @@ Three edge types corresponding to OWL property types:
 | Data property | **DP** | class → string or number | ✅ |
 | Annotation property | **AP** | any → any | ❌ |
 
+---
+
 VS Code snippets label each edge as **(OP)**, **(DP)**, or **(AP)**.
 
-```py
-uberon-male_organism .ro-has_characteristic pato-red; -- OP
-uberon-male_organism .rdfs-label 'Helictopleurus sicardi';   -- AP
-uberon-male_organism .iao-has_measurement_value 2.0;          -- DP
-```
+![w:400](img/properties_snips.png)
 
 <div class="note">Phenoscript does <strong>not</strong> enforce correct edge usage — care is required.</div>
 
 ---
 
+## How to know what descriptive terms can be used?
 
 
-## Semantic Statements — Rules
+All available terms are found in the ontologies (UBERON, PATO, BFO, RO, AISM, etc.).
+
+**Snippets:**
+
+Phenoscript snippets allow to look for terms and insert them in the description very easily:
+
+![w:400](img/snips.png)
+
+---
+
+
+**Ontology term lookup tables:**
+
+| Terms | Table |
+|-------|-------|
+| Qualities (PATO) | [pato-qualities/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/pato-qualities/table.html) |
+| Insect anatomy (AISM + COLAO) | [aism-terms/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/aism-terms/table.html) |
+
+---
+
+## Semantic statements — Rules
 
 **Rules:**
+- Terms are written with their prefixes (`aism-`, `pato-`, `ro-`), which identify the source ontology
 - Edges start with a dot `.` — inserted automatically when selecting a snippet
 - Each statement must **begin and end with a node**
 - Statements can be as long as needed
@@ -119,204 +155,31 @@ N .E N .E;
 
 ---
 
-# Core concepts: three ontology objects
-
-- **Entity**: something that can be referred to as a distinct thing
-  - **Material**: protibia, anterior region, etc. 
-  - **Immaterial**: anatomical line, body axis, etc.
-
-- **Quality**: an intrinsic feature of an entity
-  - **Value**: observable traits (*e.g.*, "red", "curved")
-  - **Relational**: relationship between entities (*e.g.*, "distal to", "fused with")
-
-- **Relationship**: connects entities or qualities
-  - *e.g.*, `part_of`, `has_characteristic`, `encircles`
-
----
-
-# Prefixes
-
-Ontology terms are written with their prefixes (`aism-`, `pato-`, `ro-`), which identify the source ontology. Descriptions typically draw on more than a dozen ontologies.
 
 
-✓ Correct:
-- pato-red, aism-insect_head, bspo-lateral_region
+## Building phenotypic statements
 
-✗ Incorrect:
-- red, aism-insect_head, bspo-lateral_region
+**Main descriptive strategy:** identify the anatomical structure → assign the appropriate quality
 
----
-
-
-## Aliases for Edges
-
-Short aliases improve readability for the most common edges:
-
-| Alias | Property |
-|-------|----------|
-| `>` | `has_part` |
-| `<` | `part_of` |
-| `>>` | `has_characteristic` (= bearer_of) |
-| `<<` | `inheres_in` |
-| `->` | `encircles` |
-| `<-` | `encircled_by` |
-| `\|>\|` | `increased_in_magnitude_relative_to` |
-| `\|<\|` | `decreased_in_magnitude_relative_to` |
-
+**Simple composition:**
 ```py
-# A male specimen with a red fore leg:
-uberon-male_organism > aism-fore_leg >> pato-red;
+this .bfo-has_part aism-protibia;
 ```
+![w:700](img/graph-1.svg)
 
 ---
 
-## Code Blocks: OTU Structure
 
-All statements must be placed inside an **OTU** (Operational Taxonomic Unit) block.
-
+**Complete Entity-Quality statement:**
 ```py
-OTU = {
-  DATA = {}    # specimen metadata: taxonomy, catalogue number, labels
-  TRAITS = {}  # morphological trait statements
-}
+this .bfo-has_part aism-protibia .ro-has_characteristic pato-red;
 ```
-
-- `DATA` — who and what the specimen is
-- `TRAITS` — what traits the specimen has
-
-**Best practice:** one species per `.yphs` file, one OTU per specimen.
-
-Use the snippet **`tmp: Insert OTU`** to insert the block template.
+![w:700](img/graph-3.svg)
 
 ---
 
-## YAML Blocks: Motivation
 
-Expressing specimen metadata as raw Phenoscript is verbose:
-
-```py
-DATA = {
-  uberon-male_organism:genus_species[this = True, linksTraits = True,
-      cls = 'uberon-adult_organism', cls = 'dwc-Preserved_Specimen']
-      .rdfs-label '_ORG_Genus species';
-  uberon-male_organism:genus_species .dwc-Catalog_Number 'CATALOG_NUMBER';
-  uberon-male_organism:genus_species .ro-has_role_in_modeling cdao-TU
-      .iao-denotes taxrank-species:yml-2db3c3;
-  taxrank-species:yml-2db3c3 .dwc-Taxon_ID_taxonID
-      'https://www.gbif.org/species/GBIF_ID';
-  taxrank-species:yml-2db3c3 .rdfs-label 'tax_Genus species';
-  taxrank-species:yml-2db3c3 .phs-represents_specimen
-      uberon-male_organism:genus_species;
-  uberon-male_organism:genus_species .phs-represents_taxon
-      taxrank-species:yml-2db3c3;
-}
-```
-
----
-
-## YAML Blocks: Motivation (Graph)
-
-The verbose DATA block above produces this knowledge graph:
-
-![w:750](img/yaml-graph.svg)
-
----
-
-## YAML Block for compactness
-
-The same data in a YAML block (*Carabus nemoralis*, voucher `Luomus:123`):
-
-```py
-OTU = {
-  DATA = {
-    #>>>YAML described_species
-    described_species:
-        .id: carabus_nemoralis
-        .rdfs-label: 'Carabus nemoralis'
-        .gbif_id: 'https://www.gbif.org/species/8056040'
-        .dwc-Catalog_Number:
-            - 'Luomus:123'
-        .is_a:
-            - uberon-male_organism
-            - uberon-adult_organism
-            - dwc-Preserved_Specimen
-    #<<<YAML
-  }
-  TRAITS = {
-    this >> pato-red;
-    this >> pato-convex;
-  }
-}
-```
----
-
-
-## YAML Block for a New Species
-
-The same data in a YAML block (*Carabus nemoralis*, voucher `Luomus:123`):
-
-```py
-```py
-#>>>YAML new_species
-new_species:
-    .id: genus_species
-    .rdfs-label: 'Genus species'
-    .zoobank_id: 'http://zoobank.org/ZOOBANK_ID'
-    .dwc-Parent_Name_Usage_ID: 'https://www.gbif.org/species/GBIF_ID_of-Parent-Genus'
-    .dwc-Catalog_Number:
-        - 'CATALOG_NUMBER'
-    .is_a:
-        - uberon-male_organism
-        - uberon-adult_organism
-        - dwc-Preserved_Specimen
-#<<<YA
-```
-
----
-
-## YAML Blocks: Key Points
-
-- **`.yphs`** files support YAML blocks; **`.phs`** files do not
-- Use **YPHS → PHS** (right-click) to see how the block expands
-- Always add a **GBIF ID** to link the taxon to a global registry
-- Snippet **`tmp: Described species`** — for known species
-- Snippet **`tmp: New species`** — for species new to science (requires ZooBank ID + parent genus GBIF ID)
-
-**The `this` keyword:**
-`this` refers to the first class under `.is_a` (here: `uberon-male_organism`).
-Use it in `TRAITS` instead of repeating the full node name on every line.
-
-```py
-TRAITS = {
-  this >> pato-red;     # same as: uberon-male_organism:carabus_nemoralis >> pato-red;
-  this >> pato-convex;
-}
-```
-
----
-
-## Negation Operator: `!`
-
-The `!` operator expresses the **absence** of a structure. Place it before the edge.
-
-```py
-# Protibia is absent:
-uberon-male_organism:id-1 !> aism-protibia;
-```
-
-This creates an individual of class:
-`uberon-male_organism AND NOT (has_part SOME aism-protibia)`
-
-No individual is created for the absent structure — its absence means it was not observed.
-
-<div class="note">
-⚠️ Only <code>has_part</code> and <code>encircles</code> can currently be used with <code>!</code>.
-Many other negations have no well-defined ontological meaning.
-</div>
-
----
-
-## Personalized Tags: `:`
+## Personalized tags: `:`
 
 When the same individual appears on multiple lines, use a **tag** to identify all occurrences as the same individual.
 
@@ -361,7 +224,7 @@ uberon-male_organism:id-1 >> pato-convex;
 
 ---
 
-## Node Lists: `(N1, N2, N3)`
+## Node lists: `(N1, N2, N3)`
 
 A **node list** links one node to multiple targets in a single statement:
 
@@ -385,55 +248,17 @@ Node lists help keep descriptions concise when one structure has several qualiti
 
 ---
 
-# Let's Write Some Descriptions!
 
-**Exercise:** Write a description of your favourite species — fill in its taxonomy and add 1–2 trait statements. Convert it to OWL and natural language, then open the OWL file in Protégé to explore its structure.
+# Shortcut: `this`
 
+`this` is used to reference to the specimen:
 
-
-## Tips
-
-**Example description — Scarabaeus (Madagascar)**
-Based on [doi.org/10.3897/BDJ.12.e121562](https://doi.org/10.3897/BDJ.12.e121562) — download and paste into your project:
-[`scarabaeus_madagascar.yphs`](https://github.com/sergeitarasov/phenoscript-workshop-incol-2026/blob/main/examples/Scarabaeus/phenotypes/scarabaeus_madagascar.yphs)
-
-<br>
-
-**Ontology term lookup tables:**
-
-| Terms | Table |
-|-------|-------|
-| Qualities (PATO) | [pato-qualities/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/pato-qualities/table.html) |
-| Insect anatomy (AISM + COLAO) | [aism-terms/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/aism-terms/table.html) |
-
-
-
-# Building phenotypic statements
-
-**Main descriptive strategy:** identify the anatomical structure → assign the appropriate quality
-
-**Simple composition:**
 ```py
-this > aism-protibia;
+this .ro-has_characteristic pato-red;
 ```
-![w:700](img/graph-1.svg)
 
 ---
 
-**Composition with quality:**
-```py
-this > aism-protibia >> pato-present;
-```
-
-![w:700](img/graph-2.svg)
-
-**Complete EQ statement:**
-```py
-this > aism-protibia >> pato-red;
-```
-![w:700](img/graph-3.svg)
-
----
 
 # Syntax & Notation
 
@@ -448,40 +273,136 @@ Prefixes are auto-generated by snippets — you don't need to look for them ever
 
 ---
 
-# Shortcuts: `this` and `()`
+# Code Blocks of PhenoScript descriptions
 
-- `this` is used to reference to the specimen:
+---
+
+## OTU structure
+
+All statements must be placed inside an **OTU** (Operational Taxonomic Unit) block.
+
 ```py
-this .ro-has_characteristic pato-red;
+OTU = {
+  DATA = {}    # specimen metadata: taxonomy, catalogue number, labels
+  TRAITS = {}  # morphological trait statements
+}
 ```
 
-- parentheses are used to assign multiple entities or qualities to the same entity:
+- `DATA` — who and what the specimen is
+- `TRAITS` — what traits the specimen has
+
+**Best practice:** one species per `.yphs` file, one OTU per specimen.
+
+Use the snippet **`tmp: Insert OTU`** to insert the block template.
+
+---
+
+## YAML blocks: motivation
+
+Expressing specimen metadata as raw Phenoscript is verbose:
 
 ```py
-# Head red, microreticulate, flattened
-this > aism-insect_head >> (pato-red, aism-microreticulate, pato-flattened);
-```
-<center>
-instead of:
-</center>
-
-```py
-this > aism-insect_head:id-cd39ea >> pato-red;
-aism-insect_head:id-cd39ea >> aism-microreticulate;
-aism-insect_head:id-cd39ea >> pato-flattened;
+DATA = {
+  uberon-male_organism:genus_species[this = True, linksTraits = True,
+      cls = 'uberon-adult_organism', cls = 'dwc-Preserved_Specimen']
+      .rdfs-label '_ORG_Genus species';
+  uberon-male_organism:genus_species .dwc-Catalog_Number 'CATALOG_NUMBER';
+  uberon-male_organism:genus_species .ro-has_role_in_modeling cdao-TU
+      .iao-denotes taxrank-species:yml-2db3c3;
+  taxrank-species:yml-2db3c3 .dwc-Taxon_ID_taxonID
+      'https://www.gbif.org/species/GBIF_ID';
+  taxrank-species:yml-2db3c3 .rdfs-label 'tax_Genus species';
+  taxrank-species:yml-2db3c3 .phs-represents_specimen
+      uberon-male_organism:genus_species;
+  uberon-male_organism:genus_species .phs-represents_taxon
+      taxrank-species:yml-2db3c3;
+}
 ```
 
 ---
 
-# ID tags
+## YAML blocks: motivation (graph)
 
-ID tags are used to refer to the same individual multiple times:
+The verbose DATA block above produces this knowledge graph:
+
+![w:750](img/yaml-graph.svg)
+
+---
+
+## YAML block for compactness
+
+The same data in a YAML block (*Carabus nemoralis*, voucher `Luomus:123`):
+
 ```py
-# Head red; antenna present
-this > aism-insect_head:id-1954fa .ro-has_characteristic pato-red;
-aism-insect_head:id-1954fa .bfo-has_part aism-antenna;
+OTU = {
+  DATA = {
+    #>>>YAML described_species
+    described_species:
+        .id: carabus_nemoralis
+        .rdfs-label: 'Carabus nemoralis'
+        .gbif_id: 'https://www.gbif.org/species/8056040'
+        .dwc-Catalog_Number:
+            - 'Luomus:123'
+        .is_a:
+            - uberon-male_organism
+            - uberon-adult_organism
+            - dwc-Preserved_Specimen
+    #<<<YAML
+  }
+  TRAITS = {
+    this >> pato-red;
+    this >> pato-convex;
+  }
+}
 ```
 ---
+
+
+## YAML block for a new species
+
+The same data in a YAML block (*Carabus nemoralis*, voucher `Luomus:123`):
+
+```py
+#>>>YAML new_species
+new_species:
+    .id: genus_species
+    .rdfs-label: 'Genus species'
+    .zoobank_id: 'http://zoobank.org/ZOOBANK_ID'
+    .dwc-Parent_Name_Usage_ID: 'https://www.gbif.org/species/GBIF_ID_of-Parent-Genus'
+    .dwc-Catalog_Number:
+        - 'CATALOG_NUMBER'
+    .is_a:
+        - uberon-male_organism
+        - uberon-adult_organism
+        - dwc-Preserved_Specimen
+#<<<YA
+```
+
+---
+
+## YAML blocks: key points
+
+- **`.yphs`** files support YAML blocks; **`.phs`** files do not
+- Use **YPHS → PHS** (right-click) to see how the block expands
+- Always add a **GBIF ID** to link the taxon to a global registry
+- Snippet **`tmp: Described species`** — for known species
+- Snippet **`tmp: New species`** — for species new to science (requires ZooBank ID + parent genus GBIF ID)
+
+**The `this` keyword:**
+`this` refers to the first class under `.is_a` (here: `uberon-male_organism`).
+Use it in `TRAITS` instead of repeating the full node name on every line.
+
+```py
+TRAITS = {
+  this >> pato-red;     # same as: uberon-male_organism:carabus_nemoralis >> pato-red;
+  this >> pato-convex;
+}
+```
+
+---
+
+
+
 
 # Positional terminology
 
@@ -523,7 +444,7 @@ Positional terms must refer to the organism's **main body axes**, not relative a
 
 # Composition rules: spatial terms
 
-**Each entity uses AT MOST ONE spatial term:**
+**Use AT MOST ONE spatial term for each entity:**
 
 ✓ Correct:
 ```py
@@ -619,9 +540,9 @@ aism-cuticular_seta <- aism-protibia < this;
 
 ---
 
-# 4. Presence and absence
+# 4. Absence
 
-When stating that an entity `has_part` or `encircles` another entity, we are implicitly stating that the second one is present. Its **absence** can be stated by negating the `has_part` or `encircles` relationship:
+The absence of a structure can be stated by negating the `has_part` or `encircles` relationship via the negation operator (**!**):
 
 ```py
 # Antenna absent
@@ -630,19 +551,13 @@ this !> aism-antenna;
 aism-protibia !-> aism-cuticular_seta;
 ```
 
----
-
-Alternatively, presence or absence of structures can be stated explicitly as qualities:
-
-```py
-# Antenna present
-this > aism-antenna >> pato-present;
-```
+⚠️ **Do not** use the `pato-absent` quality:
 
 ```py
 # Antenna absent
-this > aism-antenna >> pato-absent;
+this > aism-antenna >> pato-absent; # INCORRECT
 ```
+
 
 ---
 
