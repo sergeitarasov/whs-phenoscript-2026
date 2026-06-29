@@ -427,6 +427,16 @@ Positional terms must refer to the organism's **main body axes**, not relative a
 
 ---
 
+# Body regions and margins
+
+- Use **region** (`bspo-anatomical_region`)
+- Use **margin** (`bspo-anatomical_margin`)
+
+⚠️ Do not use `anatomical_side`, `anatomical_surface`, `anatomical_boundary` or other variants.
+
+
+---
+
 # Composition of spatial terms
 
 **Use AT MOST ONE spatial term for each entity:**
@@ -746,27 +756,6 @@ pato-fused_with:id-748ca8 .ro-has_modifier pato-increased_magnitude;
 
 ---
 
-# Body regions and margins
-
-- Use **region** (`bspo-anatomical_region`)
-- Use **margin** (`bspo-anatomical_margin`)
-
-⚠️ Do not use `anatomical_side`, `anatomical_surface`, `anatomical_boundary` or other variants.
-
-
-- **Do NOT postcompose** regions or margins
-
-✓ Correct:
-```py
-aism-protibia > bspo-ventro-distal_region;
-```
-
-✗ Wrong:
-```py
-aism-protibia > bspo-ventral_region > bspo-distal_region;
-```
-
----
 
 # Anatomical collections
 
@@ -800,9 +789,7 @@ this > aism-protibia > bspo-dorsal_margin > aism-cuticular_tooth >> aism-serial_
 
 ---
 
-
 ![w:700](img/protibia.jpg)
-
 
 ---
 
@@ -819,9 +806,7 @@ this > aism-clypeus > bspo-anterior_margin > aism-cuticular_tooth >> (aism-seria
 
 ---
 
-
 ![w:700](img/teeth.jpg)
-
 
 ---
 
@@ -855,16 +840,6 @@ this > aism-clypeus > bspo-anterior_margin > aism-cuticular_tooth >> pato-unpair
 
 ---
 
-# Antennomeres
-
-Antennomeres comprise scapus, pedicellus and flagellomeres:
-
-
-![w:700](img/antenna.jpg)
-
-
-
----
 
 # Some useful shape qualities
 
