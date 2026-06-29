@@ -164,7 +164,7 @@ this > aism-insect_head:id-cd39ea >> pato-red;
 
 ---
 
-## Id tags
+## Personalized id tags
 
 Moreover, if you want to mention the same individual structure (*e.g.*, exactly the same protibia) more than once within your description, you need to label it with a unique hexadecimal id-tag (generated automatically through the snippets dropdown menu by starting to type ":id" and pressing enter). You will need to use this tag every time you are referring to that same structure throughout the description. For example:
 
@@ -176,91 +176,41 @@ aism-insect_head:id-1954fa .bfo-has_part aism-antenna;
 
 After tagging a structure, you do not need to state again that the structure belongs to `this` in the following statements about it, as its existence was already declared once.
 
--------------------
 
-## Making Entities
+## Tags: Without vs With
 
-### Positional terminology
+<div class="columns">
+<div>
 
-Positional terms must consistently refer to the main insect body axes and not the relative axis of each structure.
+**Without tag — two individuals (incorrect)**
 
-<img src="https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/main/images/position_1.jpg" alt="Position 1" width="700" />
-
-In some cases, the positional conventions adopted in the anatomy ontologies (and therefore in Phenoscript) may be counterintuitive for taxonomists used to traditional taxon-specific terms. For example, in some Coleoptera, legs are variously rotated around their proximo-distal axis, which led traditional family-specific terminology not to reflect the true correspondence between leg regions across all Coleoptera, *e.g.*, calling "lateral" the protibial teeth of some scarabeoid beetles which are in fact on the dorsal region of the protibia (see image below). However, in order to guarantee a consistent description of morphology across different insect families and orders the anatomically consistent positional conventions used in the ontologies must be utilized.
-
-<img src="https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/main/images/position_2.jpg" alt="Position 2" width="700" />
-
-
-#### Spatial terms for main body parts:
-- anterior region/margin
-- posterior region/margin
-- lateral
-- medial
-- dorsal 
-- ventral
-
-And their combinations: antero-lateral, antero-medial region/margin, etc.
-
-#### Spatial terms for appendages:
-- anterior region/margin
-- posterior region/margin
-- dorsal 
-- ventral
-- proximal 
-- distal
-
-And their combinations: antero-proximal region/margin, etc.
-
-***Important:*** Do not use alternative terms such as basal or apical.
-
-### Composition rules
-
-Most anatomical entities are postcompositional, *i.e.*, frequently require combining spatial terms from the Biospatial Ontology (BSPO) to create precise descriptions of body structures.
-
-Each anatomical entity should be composed with **at most one spatial term** to describe a region or margin:
-
-***Correct:***
 ```py
-# Anterior region of head is red
-insect_head > anterior_region >> red;
-aism-protibia > bspo-antero-lateral_region >> red;
+uberon-male_organism >> pato-red;
+uberon-male_organism >> pato-convex;
 ```
 
-***Incorrect*** **(avoid stacking spatial terms):**
+<img src="https://raw.githubusercontent.com/sergeitarasov/whs-phenoscript-2026/images/without_tag" alt="Position 2" width="700" />
+
+![w:360](img/without-tag.svg)
+
+</div>
+<div>
+
+**With tag — one individual (correct)**
+
 ```py
-# Anterior region of head is red
-insect_head > anterior_region > lateral_region >> red;
+uberon-male_organism:id-1 >> pato-red;
+uberon-male_organism:id-1 >> pato-convex;
 ```
 
-Descriptions should try to maximize the use of general insect anatomical terms and combine (post-compose) them in the descriptions to characterize specific structures. For example:
+![w:360](img/with-tag.svg)
 
-***Correct***
-```py
-# Protibia with spur
-this > aism-protibia > aism-cuticular_spur;
-```
-
-***Incorrect***
-```py
-# Protibia with spur
-this > aism-protibial_spur;
-```
-
-Similarly:
-
-***Correct***
-```py
-# Abdomen with 7 sternites
-this > aism-abdominal_sternite .has_element_count 7;
-```
-
-***Incorrect***
-```py
-# Abdomen with 7 sternites
-this > aism-abdomen_with_7_sternites;
-```
+</div>
+</div>
 
 ---
+
+-------------------
 
 
 ## Code Blocks
@@ -368,6 +318,91 @@ new_species:
         - uberon-adult_organism
         - dwc-Preserved_Specimen
 #<<<YAML
+```
+
+
+------
+
+## Making Entities
+
+### Positional terminology
+
+Positional terms must consistently refer to the main insect body axes and not the relative axis of each structure.
+
+<img src="https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/main/images/position_1.jpg" alt="Position 1" width="700" />
+
+In some cases, the positional conventions adopted in the anatomy ontologies (and therefore in Phenoscript) may be counterintuitive for taxonomists used to traditional taxon-specific terms. For example, in some Coleoptera, legs are variously rotated around their proximo-distal axis, which led traditional family-specific terminology not to reflect the true correspondence between leg regions across all Coleoptera, *e.g.*, calling "lateral" the protibial teeth of some scarabeoid beetles which are in fact on the dorsal region of the protibia (see image below). However, in order to guarantee a consistent description of morphology across different insect families and orders the anatomically consistent positional conventions used in the ontologies must be utilized.
+
+<img src="https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/main/images/position_2.jpg" alt="Position 2" width="700" />
+
+
+#### Spatial terms for main body parts:
+- anterior region/margin
+- posterior region/margin
+- lateral
+- medial
+- dorsal 
+- ventral
+
+And their combinations: antero-lateral, antero-medial region/margin, etc.
+
+#### Spatial terms for appendages:
+- anterior region/margin
+- posterior region/margin
+- dorsal 
+- ventral
+- proximal 
+- distal
+
+And their combinations: antero-proximal region/margin, etc.
+
+***Important:*** Do not use alternative terms such as basal or apical.
+
+### Composition rules
+
+Most anatomical entities are postcompositional, *i.e.*, frequently require combining spatial terms from the Biospatial Ontology (BSPO) to create precise descriptions of body structures.
+
+Each anatomical entity should be composed with **at most one spatial term** to describe a region or margin:
+
+***Correct:***
+```py
+# Anterior region of head is red
+insect_head > anterior_region >> red;
+aism-protibia > bspo-antero-lateral_region >> red;
+```
+
+***Incorrect*** **(avoid stacking spatial terms):**
+```py
+# Anterior region of head is red
+insect_head > anterior_region > lateral_region >> red;
+```
+
+Descriptions should try to maximize the use of general insect anatomical terms and combine (post-compose) them in the descriptions to characterize specific structures. For example:
+
+***Correct***
+```py
+# Protibia with spur
+this > aism-protibia > aism-cuticular_spur;
+```
+
+***Incorrect***
+```py
+# Protibia with spur
+this > aism-protibial_spur;
+```
+
+Similarly:
+
+***Correct***
+```py
+# Abdomen with 7 sternites
+this > aism-abdominal_sternite .has_element_count 7;
+```
+
+***Incorrect***
+```py
+# Abdomen with 7 sternites
+this > aism-abdomen_with_7_sternites;
 ```
 
 
@@ -483,11 +518,11 @@ Aliases for the most commonly used edges to improve readability:
 | `>` | [has_part](http://purl.obolibrary.org/obo/BFO_0000051) | stating that an entity has part another entity |
 | `<` | [part_of](http://purl.obolibrary.org/obo/BFO_0000050) | stating that an entity is part of another entity |
 | `>>` | [has_characteristic (= bearer_of)](http://purl.obolibrary.org/obo/RO_0000053) | stating that an entity is bearer of a quality |
-| `<<` | [inheres_in](http://purl.obolibrary.org/obo/RO_0000052) | stating that a quality inheres 
-| `->` | [encircles](http://purl.obolibrary.org/obo/AISM_0000078) |
-| `<-` | [encircled_by](http://purl.obolibrary.org/obo/AISM_0000079) |
-| `\|>\|` | [increased_in_magnitude_relative_to](http://purl.obolibrary.org/obo/RO_0015007) |
-| `\|<\|` | [decreased_in_magnitude_relative_to](http://purl.obolibrary.org/obo/RO_0015008) |
+| `<<` | [inheres_in](http://purl.obolibrary.org/obo/RO_0000052) | stating that a quality inheres in an entity |
+| `->` | [encircles](http://purl.obolibrary.org/obo/AISM_0000078) | stating that an entity (sclerite) encircles another entity (ring sclerite) | 
+| `<-` | [encircled_by](http://purl.obolibrary.org/obo/AISM_0000079) | stating that an entity (ring sclerite) is encircled by another entity (sclerite) | 
+| `\|>\|` | [increased_in_magnitude_relative_to](http://purl.obolibrary.org/obo/RO_0015007) | relative comparison (greater than) |
+| `\|<\|` | [decreased_in_magnitude_relative_to](http://purl.obolibrary.org/obo/RO_0015008) | relative comparison (less than) |
 
 ---------
 

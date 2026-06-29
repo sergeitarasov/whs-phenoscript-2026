@@ -256,9 +256,12 @@ Node lists help keep descriptions concise when one structure has several qualiti
 
 `this` is used to reference to the specimen:
 
+
 ```py
-# Described organism red
-this .ro-has_characteristic pato-red;
+  # Organism is red
+  this >> pato-red;     
+  # same as: uberon-male_organism:carabus_nemoralis >> pato-red;
+  
 ```
 
 
@@ -379,20 +382,7 @@ new_species:
 - Snippet **`tmp: Described species`** — for known species
 - Snippet **`tmp: New species`** — for species new to science (requires ZooBank ID + parent genus GBIF ID)
 
-**The `this` keyword:**
-`this` refers to the first class under `.is_a` (here: `uberon-male_organism`).
-Use it in `TRAITS` instead of repeating the full node name on every line.
-
-```py
-TRAITS = {
-  this >> pato-red;     # same as: uberon-male_organism:carabus_nemoralis >> pato-red;
-  this >> pato-convex;
-}
-```
-
 ---
-
-
 
 
 # Positional terminology
