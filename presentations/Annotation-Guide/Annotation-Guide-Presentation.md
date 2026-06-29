@@ -45,8 +45,7 @@ This approach builds upon previous standardized frameworks, such as those docume
 
 In the **Entity–Quality (EQ)** model, a morphological trait is expressed as a triplet linking a **structure** to a **quality**.
 
-It is convenient to think of them as graphs — **Knowledge Graphs**.
-
+It is convenient to think of them as **knowledge graphs** composed of two nodes connected by an edge.
 ```py
 # Fore leg is red
 aism-fore_leg .ro-has_characteristic pato-red;
@@ -55,7 +54,7 @@ aism-fore_leg .ro-has_characteristic pato-red;
 ![w:400](img/eq-simple.svg)
 
 
-We extend this syntax to also represent relationships between various combinations of node types.
+We extend this syntax to also represent relationships between various combinations of node types (*e.g.*, two entities).
 
 ---
 
@@ -114,29 +113,6 @@ VS Code snippets label each edge as **(OP)**, **(DP)**, or **(AP)**.
 
 ---
 
-## How to know what descriptive terms can be used?
-
-
-All available terms are found in the ontologies (UBERON, PATO, BFO, RO, AISM, etc.).
-
-**Snippets:**
-
-Phenoscript snippets allow to look for terms and insert them in the description very easily:
-
-![w:400](img/snips.png)
-
----
-
-
-**Ontology term lookup tables:**
-
-| Terms | Table |
-|-------|-------|
-| Qualities (PATO) | [pato-qualities/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/pato-qualities/table.html) |
-| Insect anatomy (AISM + COLAO) | [aism-terms/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/aism-terms/table.html) |
-
----
-
 ## Semantic statements — Rules
 
 **Rules:**
@@ -178,6 +154,30 @@ this .bfo-has_part aism-protibia;
 this .bfo-has_part aism-protibia .ro-has_characteristic pato-red;
 ```
 ![w:700](img/graph-3.svg)
+
+---
+
+
+## How to know what descriptive terms can be used?
+
+
+All available terms are found in the ontologies (UBERON, PATO, BFO, RO, AISM, etc.).
+
+**Snippets:**
+
+Phenoscript snippets allow to look for terms and insert them in the description very easily:
+
+![w:400](img/snips.png)
+
+---
+
+
+**Ontology term lookup tables:**
+
+| Terms | Table |
+|-------|-------|
+| Qualities (PATO) | [pato-qualities/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/pato-qualities/table.html) |
+| Insect anatomy (AISM + COLAO) | [aism-terms/table.html](https://sergeitarasov.github.io/insectKG100/ontologies/aism-terms/table.html) |
 
 ---
 

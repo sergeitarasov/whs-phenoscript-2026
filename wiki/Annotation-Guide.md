@@ -3,26 +3,100 @@
 
 ## Introduction
 
-This guide explains the best practice to write phenotypic statements in Phenoscript. Phenoscript uses Entity-Quality (EQ) syntax as the foundation for all phenotypic statements, allowing precise description of morphological traits through ontologies. This approach builds upon previous standardized frameworks, such as those documented in the [Phenoscape Character Annotation Guide](https://wiki.phenoscape.org/wiki/Guide_to_Character_Annotation). It provides explanation of main character patterns and how to use positional and anatomical terminology in the most proper and consistent way.
+This guide explains the best practice to write phenotypic statements in Phenoscript. Phenoscript uses Entity-Quality (EQ) syntax as the foundation for all phenotypic statements, allowing precise description of morphological traits through ontologies. This approach builds upon previous standardized frameworks, such as those documented in the [Phenoscape Character Annotation Guide](https://wiki.phenoscape.org/wiki/Guide_to_Character_Annotation). It provides explanation of general Phenoscript syntax, main character patterns and how to use positional and anatomical terminology in the most proper and consistent way.
 
 -------------
 
-Descriptions involve three major ontology objects:
+## Semantic Statements as Graphs
 
-- **entity**: something that exists and can be referred to as a distinct thing. In Phenoscript we can use both material (*e.g.*, the protibia, the anterior region) or immaterial (*e.g.*, an anatomical line, a body axis).
+Phenoscript is based on the **Entity–Quality (EQ) syntax**: an *entity* represents an anatomical structure (e.g., fore tibia) and a *quality* describes a property of that structure (e.g., red). Together, they form a semantic statement.
 
-- **quality**: describes an intrinsic feature of an entity (*e.g.*, red, curved, length, diameter, presence). Qualities are of two types: 
+Statements are expressed as **Graphs** -- sequences of **nodes (N)** and **edges (E)**, where nodes are anatomical entities or their qualities, and edges are the relationships between them. For example, "fore leg is red" is written as:
 
-  - ***value***: observable values like "red" or "diameter", typically associated with an entity via `has_characteristic` (=`bearer_of`);
-  - ***relational quality***: qualities that express a relationship between two entities, such as "distal to" or "fused with";
+```py
+aism-fore_leg .ro-has_characteristic pato-red;
+```
 
-- **relationship**: defines relationships between an entity and a quality or another entity (*e.g.*, `part_of`, `has_characteristic`, `encircles`). Different relationships are used to describe how qualities associate with entities.
+```mermaid
+graph LR
+    A("aism-fore_leg") -- .ro-has_characteristic --> B(pato-red)
+    linkStyle default stroke:#0077be
+```
+
+
+The prefixes (`aism-`, `pato-`, `ro-`) indicate which ontology each term comes from. Morphological descriptions typically draw on more than a dozen ontologies.
+
+**Rules for statements:**
+- Edges are indicated by a preceding dot `.` — inserted automatically when a snippet is selected.
+- Each statement must begin and end with a node.
+- Statements can be as long as needed.
+- Every statement must end with a semicolon `;`.
+
+```py
+# Correct — ends with a node
+N .E N .E N;
+
+# Incorrect — ends with an edge
+N .E N .E;
+```
+
+**Comments** are marked with `#` and are ignored by the converter. Use them to annotate your descriptions.
+
+------
+
+
+## Nodes: `N`
+
+There are three types of nodes: **class nodes**, **numerical nodes**, and **string nodes**.
+
+- **Class nodes** correspond to ontology classes. Selecting a snippet marked `(C)` creates a class node — Phenoscript will generate an individual belonging to that class in the output OWL file.
+
+- **Numerical nodes** come in two subtypes:
+  - *Integer* (e.g., `2`) — used for counts such as the number of digits.
+  - *Real* (e.g., `2.0`) — used for measurements such as length.
+
+- **String nodes** are enclosed in single quotes (`' '`) or double quotes (`" "`). Any text can be used.
+
+**Example:**
+
+```py
+uberon-male_organism .rdfs-label 'Helictopleurus sicardi';
+uberon-male_organism .iao-has_measurement_value 2.0;
+```
+
+Here, `uberon-male_organism` is a class node, `'Helictopleurus sicardi'` is a string node, and `2.0` is a numerical (real) node.
+
+---
+
+## Edges: `.E`
+
+Edges correspond to three types of ontology properties:
+
+| Type | Abbreviation | Connects | Used in reasoning? |
+|------|-------------|----------|--------------------|
+| Object property | **OP** | class node → class node | ✅ |
+| Data property | **DP** | class node → string or number | ✅ |
+| Annotation property | **AP** | any node → any node | ❌ |
+
+VS Code snippets label each edge as **(OP)**, **(DP)**, or **(AP)**. Phenoscript does **not** enforce correct edge usage, so care is required.
+
+**Example:**
+
+```py
+aism-fore_leg .ro-has_characteristic pato-red;
+uberon-male_organism .rdfs-label 'Helictopleurus sicardi';
+uberon-male_organism .iao-has_measurement_value 2.0;
+```
+
+In this example,  `.ro-has_characteristic` is an OP, `.rdfs-label` is an AP edge and `.iao-has_measurement_value` is a DP edge.
+
 
 --------------------------------------------------------------
 
-The main strategy is to identify the specific anatomical structure on the insect body that you want to describe, and then assign the appropriate quality or characteristic to it. 
+## Composition of Phenotypic Statements
 
-Phenotypic statements are built as **triplets** (or combinations of triplets) connecting an entity to another entity or a quality through a relationship. At minimum, Phenoscript requires composition involving at least two entities forming complete statements:
+The main strategy is to identify the specific anatomical structure that you want to describe, and then assign the appropriate quality or characteristic to it. 
+
 
 - **Simple composition**: `this > aism-protibia;` (stating that protibia is part of the organism)
 
@@ -52,7 +126,7 @@ graph LR
 
 --------------------------------------------------------------
 
-## Syntax and notation
+## Syntax and notation summary
 
 | Element | Description | Example |
 |---------|-------------|----------|
@@ -65,22 +139,12 @@ The prefixes are provided automatically by the snippets in the dropdown menu, so
 
 --------------------------------------------------------------
 
-Don't forget that the described organism, to which all statements refer, can be referred to as `this`. For example, to say that the insect is red, you can simply write:
+## Shortcuts: `this`
+The described organism, to which all statements refer, can be referred to as `this`. For example, to say that the insect is red, you can simply write:
 
 `this .ro-has_characteristic pato-red;`
 
-
-Moreover, if you want to mention the same individual structure (*e.g.*, exactly the same protibia) more than once within your description, you need to label it with a unique hexadecimal id-tag (generated automatically through the snippets dropdown menu by starting to type ":id" and pressing enter). You will need to use this tag every time you are referring to that same structure throughout the description. For example:
-
-```py
-# Head red and with antenna
-this > aism-insect_head:id-1954fa .ro-has_characteristic pato-red;
-aism-insect_head:id-1954fa .bfo-has_part aism-antenna;
-```
-
-After tagging a structure, you do not need to state again that the structure belongs to `this` in the following statements about it, as its existence was already declared once.
-
--------------------
+## Shortcuts: node lists `(N1, N2, N3)`
 
 Moreover, if multiple entities or qualities have an identical relationship with an entity, parentheses can be used to write a single statements instead of multiple ones:
 
@@ -98,6 +162,21 @@ this > aism-insect_head:id-cd39ea >> pato-red;
   aism-insect_head:id-cd39ea >> pato-flattened;
 ```
 
+---
+
+## Id tags
+
+Moreover, if you want to mention the same individual structure (*e.g.*, exactly the same protibia) more than once within your description, you need to label it with a unique hexadecimal id-tag (generated automatically through the snippets dropdown menu by starting to type ":id" and pressing enter). You will need to use this tag every time you are referring to that same structure throughout the description. For example:
+
+```py
+# Head red and with antenna
+this > aism-insect_head:id-1954fa .ro-has_characteristic pato-red;
+aism-insect_head:id-1954fa .bfo-has_part aism-antenna;
+```
+
+After tagging a structure, you do not need to state again that the structure belongs to `this` in the following statements about it, as its existence was already declared once.
+
+-------------------
 
 ## Making Entities
 
@@ -181,8 +260,120 @@ this > aism-abdominal_sternite .has_element_count 7;
 this > aism-abdomen_with_7_sternites;
 ```
 
+---
 
-## Main types of phenotypic statement
+
+## Code Blocks
+
+A complete morphological description links a specimen to its taxonomy and traits. In Phenoscript, all statements must be placed inside an **OTU (Operational Taxonomic Unit)** block. Each OTU block typically corresponds to one specimen.
+
+An OTU block has two subblocks:
+- `DATA` — specimen metadata: taxonomy, catalogue number, labels.
+- `TRAITS` — trait statements describing morphological features.
+
+```py
+OTU = {
+  DATA = {}   # taxonomy and specimen metadata
+  TRAITS = {} # morphological trait statements
+}
+```
+
+Multiple OTU blocks are allowed per file, but the recommended practice is to keep different species in **separate files** rather than in multiple OTU blocks within a single file. To insert an OTU block, use the snippet `tmp: Insert OTU`.
+
+---
+
+## YAML Blocks: A Shorthand for Specimen Data
+
+Specifying full taxonomy and specimen metadata as raw Phenoscript statements can be lengthy:
+
+```py
+DATA = {
+  uberon-male_organism:genus_species[this = True, linksTraits = True, cls = 'uberon-adult_organism', cls = 'dwc-Preserved_Specimen'] .rdfs-label '_ORG_Genus species';
+  uberon-male_organism:genus_species .dwc-Catalog_Number 'CATALOG_NUMBER';
+  uberon-male_organism:genus_species .ro-has_role_in_modeling cdao-TU .iao-denotes taxrank-species:yml-2db3c3;
+  taxrank-species:yml-2db3c3 .dwc-Taxon_ID_taxonID 'https://www.gbif.org/species/GBIF_ID';
+  taxrank-species:yml-2db3c3 .rdfs-label 'tax_Genus species';
+  taxrank-species:yml-2db3c3 .phs-represents_specimen uberon-male_organism:genus_species;
+  uberon-male_organism:genus_species .phs-represents_taxon taxrank-species:yml-2db3c3;
+}
+```
+
+```mermaid
+graph LR
+    ORG("uberon-male_organism:genus_species<br/>AND uberon-adult_organism<br/>AND dwc-Preserved_Specimen")
+    ORG -- .rdfs-label --> LABEL("'Genus species'")
+    ORG -- .dwc-Catalog_Number --> CAT("'CATALOG_NUMBER'")
+    ORG -- .ro-has_role_in_modeling --> TU(cdao-TU)
+    TU -- .iao-denotes --> TAX("taxrank-species:yml-2db3c3")
+    TAX -- .dwc-Taxon_ID_taxonID --> GBIF("'gbif.org/.../GBIF_ID'")
+    TAX -- .rdfs-label --> TLABEL("'tax_Genus species'")
+    TAX -- .phs-represents_specimen --> ORG
+    ORG -- .phs-represents_taxon --> TAX
+
+    linkStyle default stroke:#0077be
+    style LABEL fill:#ffd580
+    style CAT fill:#ffd580
+    style TLABEL fill:#ffd580
+    style GBIF fill:#ffd580
+```
+
+
+To simplify this, Phenoscript supports **YAML blocks** that express the same information in a compact, table-like format. The example below describes a preserved male adult specimen (*Carabus nemoralis*, voucher `Luomus:123`) that is red and oval:
+
+```py
+OTU = {
+  DATA = {
+    #>>>YAML described_species
+    described_species:
+        .id: carabus_nemoralis
+        .rdfs-label: 'Carabus nemoralis'
+        .gbif_id: 'https://www.gbif.org/species/8056040'
+        .dwc-Catalog_Number:
+            - 'Luomus:123'
+        .is_a:
+            - uberon-male_organism
+            - uberon-adult_organism
+            - dwc-Preserved_Specimen
+    #<<<YAML
+  }
+
+  TRAITS = {
+    this >> pato-red;
+    this >> pato-convex;
+  }
+}
+```
+
+**Key points:**
+
+- There are two file formats: `.yphs` (default) — a mix of YAML and Phenoscript — and `.phs` — pure Phenoscript. YAML blocks are only available in `.yphs` files.
+- To see how a YAML block expands into a graph, right-click the active file and select **YPHS → PHS**.
+- Always use a GBIF identifier to link your taxon to a global registry. Search for species at [gbif.org/species/search](https://www.gbif.org/species/search?q=).
+- To insert template snippets for existing species, start typing `tmp` and select **Tmp: Described species**. For new species not yet in GBIF, use **Tmp: New species** (requires a ZooBank ID and a GBIF ID for the parent genus).
+- The keyword `this` in `this >> pato-red` refers to the first class listed under `.is_a` — in the example above, `uberon-male_organism`. Because morphological traits always belong to a specific organism individual, `this` acts as a convenient shorthand so you do not need to repeat the full node name on every line.
+
+**YAML block for a new species:**
+
+```py
+#>>>YAML new_species
+new_species:
+    .id: genus_species
+    .rdfs-label: 'Genus species'
+    .zoobank_id: 'http://zoobank.org/ZOOBANK_ID'
+    .dwc-Parent_Name_Usage_ID: 'https://www.gbif.org/species/GBIF_ID_of-Parent-Genus'
+    .dwc-Catalog_Number:
+        - 'CATALOG_NUMBER'
+    .is_a:
+        - uberon-male_organism
+        - uberon-adult_organism
+        - dwc-Preserved_Specimen
+#<<<YAML
+```
+
+
+---
+
+## Main Types of Phenotypic Statement
 
 ### 1. `has_part` and `part_of`
 
@@ -280,6 +471,25 @@ this > aism-protibia >> pato-length |>| pato-length << aism-protarsus < this;
 
 literally meaning "length of the protibia is larger than length of the protarsus".
 
+--------
+
+
+## Summary: aliases for edges
+
+Aliases for the most commonly used edges to improve readability:
+
+| Alias | Property | Type of statement |
+|-------|----------|-------------------|
+| `>` | [has_part](http://purl.obolibrary.org/obo/BFO_0000051) | stating that an entity has part another entity |
+| `<` | [part_of](http://purl.obolibrary.org/obo/BFO_0000050) | stating that an entity is part of another entity |
+| `>>` | [has_characteristic (= bearer_of)](http://purl.obolibrary.org/obo/RO_0000053) | stating that an entity is bearer of a quality |
+| `<<` | [inheres_in](http://purl.obolibrary.org/obo/RO_0000052) | stating that a quality inheres 
+| `->` | [encircles](http://purl.obolibrary.org/obo/AISM_0000078) |
+| `<-` | [encircled_by](http://purl.obolibrary.org/obo/AISM_0000079) |
+| `\|>\|` | [increased_in_magnitude_relative_to](http://purl.obolibrary.org/obo/RO_0015007) |
+| `\|<\|` | [decreased_in_magnitude_relative_to](http://purl.obolibrary.org/obo/RO_0015008) |
+
+---------
 
 ### 6. Relative measurements
 
