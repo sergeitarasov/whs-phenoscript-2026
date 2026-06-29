@@ -189,10 +189,7 @@ uberon-male_organism >> pato-red;
 uberon-male_organism >> pato-convex;
 ```
 
-<img src="https://raw.githubusercontent.com/sergeitarasov/whs-phenoscript-2026/images/without_tag" alt="Position 2" width="700" />
-
-![w:360](img/without-tag.svg)
-
+<img src="https://raw.githubusercontent.com/sergeitarasov/whs-phenoscript-2026/images/without-tag.svg" alt="Position 2" width="700" />
 </div>
 <div>
 
