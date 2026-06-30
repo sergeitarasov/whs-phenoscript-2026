@@ -66,6 +66,8 @@ WHS Methodological Pills
 **Aims:**
 - Demonstrate how to use (insect) ontologies and Phenoscript to make traits and descriptions computable
   - We focus on species descriptions
+  - We focus on insect/vertebrate traits
+    - let Sergei now if you want to configure it for other taxa
   - The approach can be applied to matrices
 - Grow and engage the community
 - We want your feedback on what can be improved
