@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:Phen="https://github.com/sergeitarasov/PhenoScript/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:term2="http://rs.tdwg.org/dwc/terms/"
+>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_19-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_7ff5ee"/>
+    <obo:IAO_0000219 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TU:_894f2a_19-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0546d42eb3ca4c57af5ed22ab7448f72">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/order"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coleoptera</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003101"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007023"/>
+    <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003101"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007023"/>
+    <Phen:PHS_0000002 rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_c6faa7"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_d829df"/>
+    <obo:RO_0003301 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_3-3"/>
+    <Phen:PHS_0000023 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <obo:BFO_0000051 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3"/>
+    <obo:BFO_0000051 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-5"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_ORG_Scarabaeus SP_1</rdfs:label>
+    <term2:catalogNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CATALOG_NUMBER</term2:catalogNumber>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6f94613968084078926f40a0169319d0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/taxonID"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.gbif.org/species/4997094</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003101"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007023"/>
+    <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003101"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007023"/>
+    <Phen:PHS_0000002 rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_974978"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_7ff5ee"/>
+    <obo:RO_0003301 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_19-3"/>
+    <Phen:PHS_0000023 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <obo:BFO_0000051 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3"/>
+    <obo:BFO_0000051 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-5"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_ORG_Scarabaeus SP_2</rdfs:label>
+    <term2:catalogNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CATALOG_NUMBER</term2:catalogNumber>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COLAO_0000000">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elytron</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N64bbc41f602b48ad80f971285a18772c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/scientificName"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus ebenus</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53670f270b8944ccbee0a0a02e67ac69">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_c6faa7"/>
+    <obo:RO_0000053 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protibia:_894f2a_15-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/COLAO_0000000"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/COLAO_0000000"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_79492f"/>
+    <obo:RO_0000053 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elytron:_894f2a_48-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000017">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_trait</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CDAO_0000138">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TU</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N814d81f2767740669e7b568c40ed45ef">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/class"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insecta</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1ca839eb35f64509863577db7ee43d20">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000024"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AISM_0000068"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/AISM_0000068"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_974978"/>
+    <obo:RO_0000053 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesotibia:_894f2a_32-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000019"/>
+    <Phen:PHS_0000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003</Phen:PHS_0000018>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My PhenoScript Project</dc:title>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">project: My PhenoScript Project...</rdfs:label>
+    <dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenospy-0.277</dcterms:creator>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-30T08:56:23.937000</dcterms:created>
+    <dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0000-0000-0000</dcterms:contributor>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/refs/heads/main/make-snippets/owl-xml/aism-edit.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/colao.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/sergeitarasov/PhenoScript/main/phenospy_package/phenospy/package-data/phenoscript.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/pato.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/refs/heads/main/make-snippets/owl-xml/bspo-edit.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cdao.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/iao.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/ro.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/uo.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/bco.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/uberon/uberon-base.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/taxrank.owl</dcterms:requires>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc29d637c511e421ab4d529c2ebab6cc6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/family"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeidae</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb5513a85230a4d76b6799231e6f629f8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_19-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_3e9713">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000022"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU Block:_3e9713</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_9b1c11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000020"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_3e9713"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DATA Block:_9b1c11</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9eff6667f2ce4b10a42c3765d424d559">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tax_Scarabaeus SP_2</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000006"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000006"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_d829df"/>
+    <Phen:PHS_0000024 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <term2:taxonID rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.gbif.org/species/4997091</term2:taxonID>
+    <term2:scientificName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus viettei</term2:scientificName>
+    <term2:genus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus</term2:genus>
+    <term2:family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeidae</term2:family>
+    <term2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coleoptera</term2:order>
+    <term2:class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insecta</term2:class>
+    <term2:phylum rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</term2:phylum>
+    <term2:kingdom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animalia</term2:kingdom>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tax_Scarabaeus SP_1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3438d04e98264d9189e8c78c26c0dcf6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000006"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000006"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_9b1c11"/>
+    <Phen:PHS_0000024 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <term2:taxonID rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.gbif.org/species/4997094</term2:taxonID>
+    <term2:scientificName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus ebenus</term2:scientificName>
+    <term2:genus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus</term2:genus>
+    <term2:family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeidae</term2:family>
+    <term2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coleoptera</term2:order>
+    <term2:class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insecta</term2:class>
+    <term2:phylum rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</term2:phylum>
+    <term2:kingdom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animalia</term2:kingdom>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tax_Scarabaeus SP_3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3eb701624f2943ce8b3e93dbd1aab037">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000023"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N19df7026d02d4330aa91fc1c990c7c8a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/taxonID"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.gbif.org/species/4997092</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2aee93eb96d94295a18a6595ce66939b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N57c99c9ab3c94f53999c7a14a6232253">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc9c281f81a8e477fa235decdba0c9ca6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tax_Scarabaeus SP_3</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_79492f"/>
+    <obo:RO_0000053 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protibia:_894f2a_47-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000022">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">source</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne81299d570c3472bb5057b9fcb19cc00">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000005">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000001"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phs_original_assertion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0000-0000-0000</dcterms:contributor>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/refs/heads/main/make-snippets/owl-xml/aism-edit.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/colao.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/sergeitarasov/PhenoScript/main/phenospy_package/phenospy/package-data/phenoscript.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/pato.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/refs/heads/main/make-snippets/owl-xml/bspo-edit.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/cdao.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/iao.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/ro.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/uo.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/bco.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/uberon/uberon-base.owl</dcterms:requires>
+    <dcterms:requires rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/taxrank.owl</dcterms:requires>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_35-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_9b1c11"/>
+    <obo:IAO_0000219 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TU:_894f2a_35-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na52463b0b10740efaa2973a721cc10e6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0003301"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_35-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/phylum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phylum</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/scientificName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scientific Name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0003101">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male organism</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na39dabcda4ca4b1a8af3a18f6e72ef2a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000006"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/TAXRANK_0000006"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_7ff5ee"/>
+    <Phen:PHS_0000024 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <term2:taxonID rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.gbif.org/species/4997092</term2:taxonID>
+    <term2:scientificName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus vansoni</term2:scientificName>
+    <term2:genus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeolus</term2:genus>
+    <term2:family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeidae</term2:family>
+    <term2:order rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coleoptera</term2:order>
+    <term2:class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insecta</term2:class>
+    <term2:phylum rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</term2:phylum>
+    <term2:kingdom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animalia</term2:kingdom>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tax_Scarabaeus SP_2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/catalogNumber">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catalog Number</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68d9b1c3869d4c79bda1e6fdfb445181">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0003301"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_3-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N66abc65e96ec46bfa390032cb9380bcc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c0cb2b0d00446a788039282f6d3250a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/kingdom"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animalia</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5654e5a7f8bb41efa6718328b0183fc4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/order"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coleoptera</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6c09c84dc608465e9a3df5c3d972972d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/scientificName"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus viettei</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000322">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/AISM_0000067"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_974978"/>
+    <obo:RO_0000053 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protibia:_894f2a_31-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N45bce0be11c94145bdc37d2dfa3ff701">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000024"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0003301">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has role in modeling</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N878402157d2f4ba58c0ddba98839ef88">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000023"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000020">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DATA Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1f67deb4ed0482cb1ecf5effa8f93fc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/phylum"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4598cea400784ac38c1ef6d5106164a9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/catalogNumber"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CATALOG_NUMBER</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003101"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007023"/>
+    <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003101"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007023"/>
+    <Phen:PHS_0000002 rdf:resource="http://rs.tdwg.org/dwc/terms/PreservedSpecimen"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_79492f"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_9b1c11"/>
+    <obo:RO_0003301 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_35-3"/>
+    <Phen:PHS_0000023 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <obo:BFO_0000051 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3"/>
+    <obo:BFO_0000051 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-5"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3"/>
+    <Phen:PHS_0000017 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_ORG_Scarabaeus SP_3</rdfs:label>
+    <term2:catalogNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CATALOG_NUMBER</term2:catalogNumber>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b781a5b7e8d4bda92b7731000ed2cb0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000322"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000322"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_c6faa7"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red:_894f2a_15-5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000324"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000324"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_79492f"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yellow:_894f2a_47-5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfeb9fabdcda64a2496df1f25da76d1ff">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_ORG_Scarabaeus SP_2</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creation_date</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000322"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000322"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_c6faa7"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red:_894f2a_16-5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nba563ef3769b442b92bb210ada23506f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc4fdbe390762446a8f05d2ddcca563d7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002180">
+    <rdfs:label>has component</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/COLAO_0000000"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/COLAO_0000000"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_c6faa7"/>
+    <obo:RO_0000053 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-5"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elytron:_894f2a_16-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb64e522e7a0a4561aefaa248d0f5a5c8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000324">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yellow</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_3-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_d829df"/>
+    <obo:IAO_0000219 rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TU:_894f2a_3-3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000318"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000318"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_974978"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue:_894f2a_32-5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N870ce827c77d48479c340e26d9763bab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/genus"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5b81c897c4db44b588ab09dda718e0eb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/family"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeidae</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N16c1c609969f428ebc469db91d43ad6d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/genus"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeolus</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1524f0ceecf14256a387b7cc7cb21449">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_35-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N164a9f0b26044029a99d20b6e20a8f4f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000023"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3dd0e3bdcf4b464f8607861880ff38e3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/taxonID"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.gbif.org/species/4997091</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ea475fd261b48f893accf05b0834cad">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <owl:annotatedProperty rdf:resource="http://purl.org/dc/terms/contributor"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0000-0000-0000</owl:annotatedTarget>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Your Name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6879b4958e6a4930bee9fddce4d67c47">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000023">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represents_taxon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc912ad012a644bd48d5b43352c8f8d91">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/kingdom"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animalia</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62cb7a93a7e6479e8e5d02452795a4b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/family"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeidae</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_793052">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000022"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU Block:_793052</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0001154"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/PATO_0001154"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_79492f"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elongated:_894f2a_48-5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PATO_0000318"/>
+    <Phen:PHS_0000002 rdf:resource="http://purl.obolibrary.org/obo/PATO_0000318"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_974978"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue:_894f2a_31-5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_d829df">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000020"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_793052"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DATA Block:_d829df</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/family">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Family</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/PreservedSpecimen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preserved Specimen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55563f87050546f89cd0d43ae1e981da">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/phylum"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_79492f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000021"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_3e9713"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRAITS Block:_79492f</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb734dac30b924b84a6d4b08ad9fe6b02">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/catalogNumber"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CATALOG_NUMBER</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000003">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000001"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phs_implies_absence_of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa9505267b68429ca04084b526e17ff6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/phylum"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N41a20574bae44dcc8190eac223a308a2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has characteristic</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_c6faa7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000021"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_793052"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRAITS Block:_c6faa7</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N07148ce57df2409581eecf748ec28350">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000004">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000001"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phs_NL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88a320e9efa3493a894eefd5b181cdf7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0003301"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_19-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbe5abcadc8384436892779e8cbcdec8d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/order"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coleoptera</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd2a11826988d443cab8edde634f72533">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/class"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insecta</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1271fbee92174f5483e8ff6324c63d31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_974978">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000021"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_f6296d"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRAITS Block:_974978</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6fc5850bef9d4cf9803a9691c2efaccc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_3-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc16a3fa30e9448c9af1b34e1c4f27a87">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/catalogNumber"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CATALOG_NUMBER</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">title</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e0454ac8bae4dc8b156b6c71fbb96cd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000024"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N42448cbfbf324c9eb3412c516136a5d2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nebe365d2c62045fbb04cebfd26496ead">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/requires">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requires</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc65e44bd04e248e486f8c6d59f3b6600">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_ORG_Scarabaeus SP_3</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has part</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_f6296d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000022"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTU Block:_f6296d</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na233db112f294b89b1114f1524b0a260">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/class"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insecta</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8358c8116ee94775a0058265fa3d2c55">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3f7891cc07c2425f89e6991b5dbe8f74">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tax_Scarabaeus SP_1</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000019">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">project</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N646ccc50dfa147ccbfe7ff14b12015e3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/kingdom"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animalia</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3d4ea9209674519a9c14891b08f70bf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naca755e5c9b54ec5974d5935814c3d49">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000018">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">project_id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5cff92169f234ebe8198983eab256fe7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">_ORG_Scarabaeus SP_1</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000001"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phs_original_class</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0007023">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult organism</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N400a442b7e964e049eef6a42817f6754">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/order">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Order</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb8b0289bac9b4735963636ae8d162559">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndb462ee1c133419f89c75aff8f278ec9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creator</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/kingdom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kingdom</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf51c549858804dd3b99e18dd685dc068">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/genus"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/taxonID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxon ID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N800550c5d8094ba1b1e3beeeeca7fc2e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0"/>
+    <owl:annotatedProperty rdf:resource="http://rs.tdwg.org/dwc/terms/scientificName"/>
+    <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarabaeus vansoni</owl:annotatedTarget>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb3587abc757244548ea02205df57ec2d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000021">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRAITS Block</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfcf7dc996d2484c802fbc751284e96d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_7ff5ee">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000020"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/project"/>
+    <dcterms:source rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_f6296d"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DATA Block:_7ff5ee</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denotes</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/class">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nec387ed87060427394151b2c2c41939e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000318">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/TAXRANK_0000006">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">species</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000067">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protibia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001154">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elongated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000024">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represents_specimen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/AISM_0000068">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesotibia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N38b671b3c53d458d9aaf250db8b1b598">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Axiom"/>
+    <owl:annotatedSource rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3"/>
+    <owl:annotatedProperty rdf:resource="https://github.com/sergeitarasov/PhenoScript/PHS_0000017"/>
+    <owl:annotatedTarget rdf:resource="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-5"/>
+    <Phen:PHS_0000005 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Phen:PHS_0000005>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rs.tdwg.org/dwc/terms/genus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://github.com/sergeitarasov/PhenoScript/PHS_0000001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenoscript_annotations</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contributor</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

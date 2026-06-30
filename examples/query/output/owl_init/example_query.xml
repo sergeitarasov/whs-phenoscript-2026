@@ -1,0 +1,599 @@
+<?xml version="1.0" ?>
+<Phenoscript xmlns:phs="https://github.com/sergeitarasov/PhenoScript">
+	<phs-config-yaml>
+		<base-iri>https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003</base-iri>
+		<authors>
+			<author name="Your Name">https://orcid.org/0000-0000-0000-0000</author>
+		</authors>
+		<project-title>My PhenoScript Project</project-title>
+		<importOntologies>
+			<importOntology>https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/refs/heads/main/make-snippets/owl-xml/aism-edit.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/colao.owl</importOntology>
+			<importOntology>https://raw.githubusercontent.com/sergeitarasov/PhenoScript/main/phenospy_package/phenospy/package-data/phenoscript.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/pato.owl</importOntology>
+			<importOntology>https://raw.githubusercontent.com/sergeitarasov/phenoscript-workshop-incol-2026/refs/heads/main/make-snippets/owl-xml/bspo-edit.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/cdao.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/iao.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/ro.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/uo.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/bco.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/uberon/uberon-base.owl</importOntology>
+			<importOntology>http://purl.obolibrary.org/obo/taxrank.owl</importOntology>
+		</importOntologies>
+	</phs-config-yaml>
+	<phs:otu_objects_list>
+		<phs:otu_object>
+			<phs:otu_properties>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+							<phs:node_property phs:value="True" phs:var-iri="KeyWord:this" phs:var-label_original="this" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">this</phs:node_property>
+							<phs:node_property phs:value="True" phs:var-iri="KeyWord:linksTraits" phs:var-label_original="linksTraits" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">linksTraits</phs:node_property>
+							<phs:node_property phs:value="uberon-adult_organism" phs:var-iri="KeyWord:cls" phs:var-label_original="cls" phs:var-type_onto="KeyWord" phs:value-iri="http://purl.obolibrary.org/obo/UBERON_0007023" phs:value-label_original="adult organism" phs:value-type_onto="C">cls</phs:node_property>
+							<phs:node_property phs:value="dwc-Preserved_Specimen" phs:var-iri="KeyWord:cls" phs:var-label_original="cls" phs:var-type_onto="KeyWord" phs:value-iri="http://rs.tdwg.org/dwc/terms/PreservedSpecimen" phs:value-label_original="Preserved Specimen" phs:value-type_onto="C">cls</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="rdfs-label" phs:iri="http://www.w3.org/2000/01/rdf-schema#label" phs:label_original="label" phs:type_onto="AP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="_ORG_Scarabaeus SP_1"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Catalog_Number" phs:iri="http://rs.tdwg.org/dwc/terms/catalogNumber" phs:label_original="Catalog Number" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="CATALOG_NUMBER"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="ro-has_role_in_modeling" phs:iri="http://purl.obolibrary.org/obo/RO_0003301" phs:label_original="has role in modeling" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_3-3" phs:triple_pos="3" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_3-3" phs:triple_pos="1" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="iao-denotes" phs:iri="http://purl.obolibrary.org/obo/IAO_0000219" phs:label_original="denotes" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Taxon_ID_taxonID" phs:iri="http://rs.tdwg.org/dwc/terms/taxonID" phs:label_original="Taxon ID" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="https://www.gbif.org/species/4997091"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Scientific_Name" phs:iri="http://rs.tdwg.org/dwc/terms/scientificName" phs:label_original="Scientific Name" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeus viettei"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Genus" phs:iri="http://rs.tdwg.org/dwc/terms/genus" phs:label_original="Genus" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeus"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Family" phs:iri="http://rs.tdwg.org/dwc/terms/family" phs:label_original="Family" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeidae"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Order" phs:iri="http://rs.tdwg.org/dwc/terms/order" phs:label_original="Order" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Coleoptera"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Class" phs:iri="http://rs.tdwg.org/dwc/terms/class" phs:label_original="Class" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Insecta"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Phylum" phs:iri="http://rs.tdwg.org/dwc/terms/phylum" phs:label_original="Phylum" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Arthropoda"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Kingdom" phs:iri="http://rs.tdwg.org/dwc/terms/kingdom" phs:label_original="Kingdom" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Animalia"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="rdfs-label" phs:iri="http://www.w3.org/2000/01/rdf-schema#label" phs:label_original="label" phs:type_onto="AP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="tax_Scarabaeus SP_1"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="phs-represents_specimen" phs:iri="https://github.com/sergeitarasov/PhenoScript/PHS_0000024" phs:label_original="represents_specimen" phs:type_onto="AP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1" phs:triple_pos="3" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_1" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="phs-represents_taxon" phs:iri="https://github.com/sergeitarasov/PhenoScript/PHS_0000023" phs:label_original="represents_taxon" phs:type_onto="AP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-06bb60" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+			</phs:otu_properties>
+			<phs:ophu_list>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+							<phs:node_property phs:value="this">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_g_" phs:iri="http://purl.obolibrary.org/obo/BFO_0000051" phs:label_original="has part" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3" phs:triple_pos="3" phs:node_name="aism-protibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000067" phs:label_original="protibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-protibia">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-3" phs:triple_pos="1" phs:node_name="aism-protibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000067" phs:label_original="protibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-protibia">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_15-5" phs:triple_pos="3" phs:node_name="pato-red" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0000322" phs:label_original="red" phs:type_onto="C">
+							<phs:node_property phs:value="pato-red">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+							<phs:node_property phs:value="this">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_g_" phs:iri="http://purl.obolibrary.org/obo/BFO_0000051" phs:label_original="has part" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3" phs:triple_pos="3" phs:node_name="colao-elytron" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/COLAO_0000000" phs:label_original="elytron" phs:type_onto="C">
+							<phs:node_property phs:value="colao-elytron">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-3" phs:triple_pos="1" phs:node_name="colao-elytron" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/COLAO_0000000" phs:label_original="elytron" phs:type_onto="C">
+							<phs:node_property phs:value="colao-elytron">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_16-5" phs:triple_pos="3" phs:node_name="pato-red" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0000322" phs:label_original="red" phs:type_onto="C">
+							<phs:node_property phs:value="pato-red">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+			</phs:ophu_list>
+		</phs:otu_object>
+		<phs:otu_object>
+			<phs:otu_properties>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+							<phs:node_property phs:value="True" phs:var-iri="KeyWord:this" phs:var-label_original="this" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">this</phs:node_property>
+							<phs:node_property phs:value="True" phs:var-iri="KeyWord:linksTraits" phs:var-label_original="linksTraits" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">linksTraits</phs:node_property>
+							<phs:node_property phs:value="uberon-adult_organism" phs:var-iri="KeyWord:cls" phs:var-label_original="cls" phs:var-type_onto="KeyWord" phs:value-iri="http://purl.obolibrary.org/obo/UBERON_0007023" phs:value-label_original="adult organism" phs:value-type_onto="C">cls</phs:node_property>
+							<phs:node_property phs:value="dwc-Preserved_Specimen" phs:var-iri="KeyWord:cls" phs:var-label_original="cls" phs:var-type_onto="KeyWord" phs:value-iri="http://rs.tdwg.org/dwc/terms/PreservedSpecimen" phs:value-label_original="Preserved Specimen" phs:value-type_onto="C">cls</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="rdfs-label" phs:iri="http://www.w3.org/2000/01/rdf-schema#label" phs:label_original="label" phs:type_onto="AP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="_ORG_Scarabaeus SP_2"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Catalog_Number" phs:iri="http://rs.tdwg.org/dwc/terms/catalogNumber" phs:label_original="Catalog Number" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="CATALOG_NUMBER"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="ro-has_role_in_modeling" phs:iri="http://purl.obolibrary.org/obo/RO_0003301" phs:label_original="has role in modeling" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_19-3" phs:triple_pos="3" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_19-3" phs:triple_pos="1" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="iao-denotes" phs:iri="http://purl.obolibrary.org/obo/IAO_0000219" phs:label_original="denotes" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Taxon_ID_taxonID" phs:iri="http://rs.tdwg.org/dwc/terms/taxonID" phs:label_original="Taxon ID" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="https://www.gbif.org/species/4997092"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Scientific_Name" phs:iri="http://rs.tdwg.org/dwc/terms/scientificName" phs:label_original="Scientific Name" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeus vansoni"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Genus" phs:iri="http://rs.tdwg.org/dwc/terms/genus" phs:label_original="Genus" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeolus"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Family" phs:iri="http://rs.tdwg.org/dwc/terms/family" phs:label_original="Family" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeidae"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Order" phs:iri="http://rs.tdwg.org/dwc/terms/order" phs:label_original="Order" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Coleoptera"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Class" phs:iri="http://rs.tdwg.org/dwc/terms/class" phs:label_original="Class" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Insecta"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Phylum" phs:iri="http://rs.tdwg.org/dwc/terms/phylum" phs:label_original="Phylum" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Arthropoda"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Kingdom" phs:iri="http://rs.tdwg.org/dwc/terms/kingdom" phs:label_original="Kingdom" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Animalia"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="rdfs-label" phs:iri="http://www.w3.org/2000/01/rdf-schema#label" phs:label_original="label" phs:type_onto="AP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="tax_Scarabaeus SP_2"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="phs-represents_specimen" phs:iri="https://github.com/sergeitarasov/PhenoScript/PHS_0000024" phs:label_original="represents_specimen" phs:type_onto="AP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2" phs:triple_pos="3" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_2" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="phs-represents_taxon" phs:iri="https://github.com/sergeitarasov/PhenoScript/PHS_0000023" phs:label_original="represents_taxon" phs:type_onto="AP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-2799f0" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+			</phs:otu_properties>
+			<phs:ophu_list>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+							<phs:node_property phs:value="this">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_g_" phs:iri="http://purl.obolibrary.org/obo/BFO_0000051" phs:label_original="has part" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3" phs:triple_pos="3" phs:node_name="aism-protibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000067" phs:label_original="protibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-protibia">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-3" phs:triple_pos="1" phs:node_name="aism-protibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000067" phs:label_original="protibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-protibia">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_31-5" phs:triple_pos="3" phs:node_name="pato-blue" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0000318" phs:label_original="blue" phs:type_onto="C">
+							<phs:node_property phs:value="pato-blue">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+							<phs:node_property phs:value="this">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_g_" phs:iri="http://purl.obolibrary.org/obo/BFO_0000051" phs:label_original="has part" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3" phs:triple_pos="3" phs:node_name="aism-mesotibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000068" phs:label_original="mesotibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-mesotibia">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-3" phs:triple_pos="1" phs:node_name="aism-mesotibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000068" phs:label_original="mesotibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-mesotibia">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_32-5" phs:triple_pos="3" phs:node_name="pato-blue" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0000318" phs:label_original="blue" phs:type_onto="C">
+							<phs:node_property phs:value="pato-blue">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+			</phs:ophu_list>
+		</phs:otu_object>
+		<phs:otu_object>
+			<phs:otu_properties>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+							<phs:node_property phs:value="True" phs:var-iri="KeyWord:this" phs:var-label_original="this" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">this</phs:node_property>
+							<phs:node_property phs:value="True" phs:var-iri="KeyWord:linksTraits" phs:var-label_original="linksTraits" phs:var-type_onto="KeyWord" phs:value-iri="KeyWord:True" phs:value-label_original="True" phs:value-type_onto="KeyWord">linksTraits</phs:node_property>
+							<phs:node_property phs:value="uberon-adult_organism" phs:var-iri="KeyWord:cls" phs:var-label_original="cls" phs:var-type_onto="KeyWord" phs:value-iri="http://purl.obolibrary.org/obo/UBERON_0007023" phs:value-label_original="adult organism" phs:value-type_onto="C">cls</phs:node_property>
+							<phs:node_property phs:value="dwc-Preserved_Specimen" phs:var-iri="KeyWord:cls" phs:var-label_original="cls" phs:var-type_onto="KeyWord" phs:value-iri="http://rs.tdwg.org/dwc/terms/PreservedSpecimen" phs:value-label_original="Preserved Specimen" phs:value-type_onto="C">cls</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="rdfs-label" phs:iri="http://www.w3.org/2000/01/rdf-schema#label" phs:label_original="label" phs:type_onto="AP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="_ORG_Scarabaeus SP_3"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Catalog_Number" phs:iri="http://rs.tdwg.org/dwc/terms/catalogNumber" phs:label_original="Catalog Number" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="CATALOG_NUMBER"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="ro-has_role_in_modeling" phs:iri="http://purl.obolibrary.org/obo/RO_0003301" phs:label_original="has role in modeling" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_35-3" phs:triple_pos="3" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_35-3" phs:triple_pos="1" phs:node_name="cdao-TU" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/CDAO_0000138" phs:label_original="TU" phs:type_onto="C">
+							<phs:node_property phs:value="cdao-TU">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="iao-denotes" phs:iri="http://purl.obolibrary.org/obo/IAO_0000219" phs:label_original="denotes" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Taxon_ID_taxonID" phs:iri="http://rs.tdwg.org/dwc/terms/taxonID" phs:label_original="Taxon ID" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="https://www.gbif.org/species/4997094"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Scientific_Name" phs:iri="http://rs.tdwg.org/dwc/terms/scientificName" phs:label_original="Scientific Name" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeus ebenus"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Genus" phs:iri="http://rs.tdwg.org/dwc/terms/genus" phs:label_original="Genus" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeus"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Family" phs:iri="http://rs.tdwg.org/dwc/terms/family" phs:label_original="Family" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Scarabaeidae"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Order" phs:iri="http://rs.tdwg.org/dwc/terms/order" phs:label_original="Order" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Coleoptera"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Class" phs:iri="http://rs.tdwg.org/dwc/terms/class" phs:label_original="Class" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Insecta"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Phylum" phs:iri="http://rs.tdwg.org/dwc/terms/phylum" phs:label_original="Phylum" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Arthropoda"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="dwc-Kingdom" phs:iri="http://rs.tdwg.org/dwc/terms/kingdom" phs:label_original="Kingdom" phs:type_onto="DP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="Animalia"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="rdfs-label" phs:iri="http://www.w3.org/2000/01/rdf-schema#label" phs:label_original="label" phs:type_onto="AP"/>
+						<phs:quoted_node phs:triple_pos="3" phs:node_name="tax_Scarabaeus SP_3"/>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="1" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="phs-represents_specimen" phs:iri="https://github.com/sergeitarasov/PhenoScript/PHS_0000024" phs:label_original="represents_specimen" phs:type_onto="AP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3" phs:triple_pos="3" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/sp_3" phs:triple_pos="1" phs:node_name="uberon-male_organism" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/UBERON_0003101" phs:label_original="male organism" phs:type_onto="C">
+							<phs:node_property phs:value="uberon-male_organism">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="phs-represents_taxon" phs:iri="https://github.com/sergeitarasov/PhenoScript/PHS_0000023" phs:label_original="represents_taxon" phs:type_onto="AP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/yml-f923fe" phs:triple_pos="3" phs:node_name="taxrank-species" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/TAXRANK_0000006" phs:label_original="species" phs:type_onto="C">
+							<phs:node_property phs:value="taxrank-species">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+			</phs:otu_properties>
+			<phs:ophu_list>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+							<phs:node_property phs:value="this">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_g_" phs:iri="http://purl.obolibrary.org/obo/BFO_0000051" phs:label_original="has part" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3" phs:triple_pos="3" phs:node_name="aism-protibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000067" phs:label_original="protibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-protibia">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-3" phs:triple_pos="1" phs:node_name="aism-protibia" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/AISM_0000067" phs:label_original="protibia" phs:type_onto="C">
+							<phs:node_property phs:value="aism-protibia">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_47-5" phs:triple_pos="3" phs:node_name="pato-yellow" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0000324" phs:label_original="yellow" phs:type_onto="C">
+							<phs:node_property phs:value="pato-yellow">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+				<phs:ophu_statement>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-1" phs:triple_pos="1" phs:node_name="this" phs:fromNegativeEdge="False" phs:iri="KeyWord:this" phs:label_original="this" phs:type_onto="KeyWord">
+							<phs:node_property phs:value="this">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_g_" phs:iri="http://purl.obolibrary.org/obo/BFO_0000051" phs:label_original="has part" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3" phs:triple_pos="3" phs:node_name="colao-elytron" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/COLAO_0000000" phs:label_original="elytron" phs:type_onto="C">
+							<phs:node_property phs:value="colao-elytron">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+					<phs:triple_node>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-3" phs:triple_pos="1" phs:node_name="colao-elytron" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/COLAO_0000000" phs:label_original="elytron" phs:type_onto="C">
+							<phs:node_property phs:value="colao-elytron">node_name</phs:node_property>
+						</phs:node>
+						<phs:edge phs:triple_pos="2" phs:negative_prop="False" phs:edge_name="_gg_" phs:iri="http://purl.obolibrary.org/obo/RO_0000053" phs:label_original="has characteristic" phs:type_onto="OP"/>
+						<phs:node phs:node_id="https://data.phenoscript.org/922e6502-7461-11f1-a75e-0242ac110003/_894f2a_48-5" phs:triple_pos="3" phs:node_name="pato-elongated" phs:fromNegativeEdge="False" phs:iri="http://purl.obolibrary.org/obo/PATO_0001154" phs:label_original="elongated" phs:type_onto="C">
+							<phs:node_property phs:value="pato-elongated">node_name</phs:node_property>
+						</phs:node>
+					</phs:triple_node>
+				</phs:ophu_statement>
+			</phs:ophu_list>
+		</phs:otu_object>
+	</phs:otu_objects_list>
+</Phenoscript>

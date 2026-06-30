@@ -1,0 +1,80 @@
+
+OTU = { #// OTUName:  Addd OTU/SPECIES NAME HERE
+    
+    DATA = {
+        #>>>YAML described_species
+        described_species:
+            .id: sp_1
+            .rdfs-label: 'Scarabaeus SP_1'
+            .gbif_id: 'https://www.gbif.org/species/4997091'
+            .dwc-Catalog_Number:
+                - 'CATALOG_NUMBER'
+            .is_a:
+                - uberon-male_organism
+                - uberon-adult_organism
+                - dwc-Preserved_Specimen
+        #<<<YAML
+    }
+    
+    TRAITS = {
+        this > aism-protibia >> pato-red;
+        this > colao-elytron >> pato-red;
+    }
+
+}
+
+
+
+
+
+OTU = { #// OTUName:  Addd OTU/SPECIES NAME HERE
+    
+    DATA = {
+        #>>>YAML described_species
+        described_species:
+            .id: sp_2
+            .rdfs-label: 'Scarabaeus SP_2'
+            .gbif_id: 'https://www.gbif.org/species/4997092'
+            .dwc-Catalog_Number:
+                - 'CATALOG_NUMBER'
+            .is_a:
+                - uberon-male_organism
+                - uberon-adult_organism
+                - dwc-Preserved_Specimen
+        #<<<YAML
+    }
+    
+    TRAITS = {
+        this > aism-protibia >> pato-blue;
+        this > aism-mesotibia >> pato-blue;
+    }
+
+}
+
+
+
+
+
+OTU = { #// OTUName:  Addd OTU/SPECIES NAME HERE
+    
+    DATA = {
+        #>>>YAML described_species
+        described_species:
+            .id: sp_3
+            .rdfs-label: 'Scarabaeus SP_3'
+            .gbif_id: 'https://www.gbif.org/species/4997094'
+            .dwc-Catalog_Number:
+                - 'CATALOG_NUMBER'
+            .is_a:
+                - uberon-male_organism
+                - uberon-adult_organism
+                - dwc-Preserved_Specimen
+        #<<<YAML
+    }
+    
+    TRAITS = {
+        this > aism-protibia >> pato-yellow;
+        this > colao-elytron >> pato-elongated;
+    }
+
+}
