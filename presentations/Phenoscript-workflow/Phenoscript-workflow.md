@@ -40,37 +40,18 @@ WHS Methodological Pills
 
 ---
 
-# Worfklow
+## What is Phenoscript?
 
-Install all software
-1. Open VS Code and Docker should be running
-1. create project. configure yaml
-2. go to examplar description. Comvert to OWL text
-    - Use check Syntax for troubleshootong
-    - Options: Terms Info
-    - Option YPHS to PHS3
-    - You can convert to Text or HTML
-    - You can add Gbig taxonomy
-    - Good practice: one yphs per species
-3. Build KB
-    - Download all ontologes
-    - Click Make KB
+Phenoscript is a **domain-specific language** for writing machine-readable morphological descriptions using biological ontologies.
 
----
+Descriptions written in Phenoscript are:
+- Based on the **Entity–Quality (EQ)** model
+- Linked to terms from standard ontologies (AISM, PATO, UBERON, RO, …)
+- Converted to **OWL knowledge graphs** for reasoning and querying
 
-
-## Previous Work on Semantic Phenotypes
-
-Semantic phenotyping has a rich history across biology:
-
-- **Human genetics** — the Human Phenotype Ontology (HPO) encodes clinical phenotypes for disease diagnosis and gene discovery
-- **Model organisms** — projects such as [Phenoscape](https://phenoscape.org) pioneered semantic phenotypes for comparative anatomy in vertebrates
-
-**Limitation of earlier approaches:**
-Previous systems used **class-based descriptions** — each phenotype is pre-defined as a named OWL class. This requires building and maintaining a curated *trait database* before any annotation can begin.
-
-**Phenoscript's approach:**
-Phenoscript uses **instance-based descriptions** — phenotypes are composed on the fly by linking ontology terms as individuals. New phenotype combinations can be expressed freely without pre-defining them, making the workflow scalable to the vast diversity of invertebrate morphology.
+**File formats:**
+- `.yphs` — default format mixing YAML and Phenoscript (recommended)
+- `.phs` — pure Phenoscript
 
 ---
 
@@ -101,20 +82,6 @@ Describes ontology instances (*individuals*) using TBox classes.
 
 ---
 
-## What is Phenoscript?
-
-Phenoscript is a **domain-specific language** for writing machine-readable morphological descriptions that connect to biological ontologies.
-
-Descriptions written in Phenoscript are:
-- Based on the **Entity–Quality (EQ)** model
-- Linked to terms from standard ontologies (AISM, PATO, UBERON, RO, …)
-- Converted to **OWL knowledge graphs** for reasoning and querying
-
-**File formats:**
-- `.yphs` — default format mixing YAML and Phenoscript (recommended)
-- `.phs` — pure Phenoscript
-
----
 
 
 ## Ontologies Used in Species Descriptions
@@ -139,62 +106,22 @@ Descriptions written in Phenoscript are:
 For details see [obofoundry.org](https://obofoundry.org).
 
 ---
-
-# Let's Try Phenoscript!
-
-<br>
-
-📖 **Installation guide & Hello World** (with videos):
-
-### [github.com/…/wiki/install](https://github.com/sergeitarasov/phenoscript-workshop-incol-2026/wiki/install)
-
-<br>
-
-Covers:
-- Installing the VS Code extension
-- Creating your first project
-- Running the converter
-
-
-
----
-
-## Converter: Editor Features
-
-**Term Snippets**
-As you type, all available ontology terms appear as autocomplete suggestions in a pop-up menu. Select a term to insert it.
-
-**Ontology Term Info**
-Hover over any term (e.g., `pato-red`) to see its IRI, label, and definition from the source ontology — without leaving the editor.
-
-**Syntax Checking**
-Use **Check Syntax** (sidebar button) to validate your `.yphs` file before conversion. Errors are reported with line numbers.
-
-**YPHS → PHS Preview**
-Right-click the active `.yphs` file → **YPHS → PHS** to expand YAML blocks into raw Phenoscript statements. Useful for understanding how the converter interprets your data.
-
----
-
-## Output files you get
-
-| Output | Description |
-|--------|-------------|
-| **OWL ABox** | Machine-readable knowledge graph (`output/abox/`) -- Open it with **Protege**. |
-| **Natural language text** | HTML description auto-generated from your Phenoscript (`output/nl/`). -- You can open it with an **internet browser**. |
-| **SHACL report** | SHACL (Shapes Constraint Language) validates the ABox against a set of rules — flags missing required fields and structural errors (`output/log-shacl/`) |
-
----
-
 # Overview — Phenoscript Workflow
 
-<div style="text-align:center; margin-top:1rem;">
 
-![Phenoscript Workflow Diagram](workflow-diagram.png)
+1. [Create Project and Write your Description]()
+2. [Convert to OWL + Natural Text]()
+3. [Build Knowledge Base]()
+
+<div style="text-align:center; margin-top:0.5rem;">
+
+![w:700](https://github.com/sergeitarasov/whs-phenoscript-2026/raw/main/images/vsc-phenoscript.png)
 
 </div>
 
 ---
-# RECAP: Step 1 — Convert to OWL + Text
+
+# Step 2 — Convert to OWL + Natural Text
 
 Click **Convert to OWL + Text** in the sidebar.
 
@@ -260,10 +187,12 @@ The reasoner verifies that all statements follow the rules defined by the ontolo
 **Most common mistake — wrong edge:**
 
 ```py
-# Incorrect — a quality cannot be a part of a structure
+# Incorrect — quality cannot be a part of a structure
+# Meaning: head has_part red color
 aism-insect_head > pato-red;
 
-# Correct — a quality must be a characteristic of a structure
+# Correct — quality must be a characteristic of a structure
+# head has_characteristic red color
 aism-insect_head >> pato-red;
 ```
 
@@ -277,16 +206,18 @@ The reasoner also **infers additional relationships** not explicitly stated.
 
 Given:
 ```py
-this > aism-insect_head > bspo-anterior_region >> pato-red;
+# Meaning: organism has_part head. head has_part  anterior_region that is red color
+organism > aism-insect_head > bspo-anterior_region >> pato-red;
 ```
 
 The reasoner automatically infers:
 
 ```py
-# has_part is transitive → organism also has_part anterior_region
-this > bspo-anterior_region;
+# Inferred — because has_part is transitive
+# Meaning: organism as_part  anterior_region
+organism > bspo-anterior_region;
 
-# red is a colour → individual also belongs to the class pato-color
+# Inferred — because red is a colour; the described individual also belongs to the class pato-color
 pato-red SubClassOf pato-color;
 ```
 
@@ -315,6 +246,8 @@ Repeat until you isolate the error.
 
 ### Option 2 — PhenoScript-GPT
 
+[phenoscript-gpt](https://chatgpt.com/g/g-69d8e94a33e88191ac4dc13189a27606-phenoscript-gpt)
+
 Paste the problematic code into **PhenoScript-GPT** and ask it to find the error.
 
 The GPT is trained on Phenoscript syntax and annotation rules and can often pinpoint the problem quickly.
@@ -322,4 +255,4 @@ The GPT is trained on Phenoscript syntax and annotation rules and can often pinp
 </div>
 </div>
 
----
+
