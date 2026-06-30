@@ -90,8 +90,30 @@ uberon-male_organism .iao-has_measurement_value 2.0;
 
 In this example,  `.ro-has_characteristic` is an OP, `.rdfs-label` is an AP edge and `.iao-has_measurement_value` is a DP edge.
 
+--------------------
 
---------------------------------------------------------------
+## Ontologies Used in Species Descriptions
+
+<style scoped>table { font-size: 0.85rem; } </style>
+
+| Abbrev | Full name | Example terms |
+|--------|-----------|---------------|
+| **AISM** | Ontology for the Anatomy of the Insect SkeletoMuscular system | pronotum, wing |
+| **COLAO** | Coleoptera Anatomy Ontology | elytron, mesoventrite |
+| **UBERON** | Uberon multi-species anatomy ontology | female organism, adult organism |
+| **PATO** | Phenotype And Trait Ontology | red, convex, length, setose |
+| **BSPO** | Biological Spatial Ontology | distal region, ventral side |
+| **RO** | Relation Ontology | part_of, has_characteristic |
+| **BCO** | Biological Collections Ontology | catalogNumber, TaxonID |
+| **CDAO** | Comparative Data Analysis Ontology | TU (taxonomic unit) |
+| **IAO** | Information Artifact Ontology | denotes |
+| **UO** | Units of Measurement Ontology | millimeter |
+| **TAXRANK** | Taxonomic Rank Vocabulary | species |
+| **PHS** | Phenoscript Ontology | has_trait, OTU Block |
+
+For details see [obofoundry.org](https://obofoundry.org).
+
+-----------------------------------
 
 ## Composition of Phenotypic Statements
 
