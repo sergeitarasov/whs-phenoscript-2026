@@ -864,3 +864,15 @@ In those cases, providing photographs instead of a textual description may be th
 
 
 Phenoscript in under active development - suggestions of additional patterns are welcome!
+
+---
+
+# Let's write a description!
+
+Example description — *Scarabaeus* (Madagascar):
+
+[whs-phenoscript-2026/examples/Scarabaeus/phenotypes/scarabaeus_madagascar.yphs](https://github.com/sergeitarasov/whs-phenoscript-2026/blob/main/examples/Scarabaeus/phenotypes/scarabaeus_madagascar.yphs)
+
+Based on [doi.org/10.3897/BDJ.12.e121562](https://doi.org/10.3897/BDJ.12.e121562)
+
+

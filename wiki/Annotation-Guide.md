@@ -746,11 +746,6 @@ The chosen order of numbering (what element has `id_1` and so on) will depend on
 
 ***Note.*** In Coleoptera, elytral striae are also repeated structures with the same developmental origin; however, specific numbered terms are present for them and shall be used instead of serial position ids (*e.g.*, `colao-elytral_stria_1`, `colao-elytral_interstria_2`).
 
-## Antennomeres
-
-Antennomeres comprise scapus, pedicellus and flagellomeres:
-
-<img src="https://github.com/sergeitarasov/whs-phenoscript-2026/raw/main/images/antenna.jpg" alt="Antenna" width="500" />
 
 ## Useful shape qualities
 
@@ -767,4 +762,17 @@ Useful qualities that may be recurrent in the description of shapes are:
 # Limitations
 
 Phenoscript allows the description of a broad variety of phenotypic traits. However, the shape of some structures is notoriously difficult to capture even with natural language, for example some complex colour patterns or genital traits. In such cases, we suggest that the best solution is to avoid writing Phenoscript statement that may prove to be very difficult to craft and understand. Instead, complementing the taxonomic description with a self-explanatory picture of the structure is probably a much more effective solution. However, Phenoscript is constantly under development and the description of very complex structures may be easier in the future upon definition of additional ontology classes and tested descriptive patterns.
+
+-----
+
+# Let's write descriptions!
+
+Example description — *Scarabaeus* (Madagascar):
+
+[whs-phenoscript-2026/examples/Scarabaeus/phenotypes/scarabaeus_madagascar.yphs](https://github.com/sergeitarasov/whs-phenoscript-2026/blob/main/examples/Scarabaeus/phenotypes/scarabaeus_madagascar.yphs)
+
+Based on [doi.org/10.3897/BDJ.12.e121562](https://doi.org/10.3897/BDJ.12.e121562)
+
+
+
 
