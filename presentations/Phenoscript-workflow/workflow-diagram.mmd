@@ -1,0 +1,22 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#e8f4f8','primaryTextColor':'#000','primaryBorderColor':'#2c5f8a','lineColor':'#2c5f8a','secondaryColor':'#f0f4f8','tertiaryColor':'#e8f5e9','fontSize':'18px'}}}%%
+flowchart TD
+    Start[YPHS Files<br/>Morphological Descriptions]
+    
+    Step1[Step 1: Convert to OWL + Text<br/><i>Output: OWL Descriptions, Natural Language Text, SHACL Validation</i>]
+    
+    Step2[Step 2: Build Knowledge Base]
+    Step2a[Step 2a: Get/Update Ontologies]
+    Step2b[Step 2b: Materialize KB<br/><i>Output: Consistency Check, Inference & Enrichment</i>]
+    
+    KB[Knowledge Base .ttl<br/>Query with Sparklis]
+    
+    Start --> Step1
+    Step1 --> Step2
+    Step2 --> Step2a
+    Step2 --> Step2b
+    Step2a --> KB
+    Step2b --> KB
+    
+    classDef processStep fill:#d6e9f5,stroke:#2c5f8a,stroke-width:2px,color:#000
+    
+    class Start,Step1,Step2,Step2a,Step2b,KB processStep

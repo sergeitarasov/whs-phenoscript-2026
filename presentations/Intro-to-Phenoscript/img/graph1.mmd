@@ -1,0 +1,12 @@
+graph LR
+    A(uberon-male_organism:id-1) -- .rdfs-label --> B(Helictopleurus sicardi)
+    A(uberon-male_organism:id-1) -- .bearer_of --> C(pato-length)
+    C(pato-length) -- .iao-is_quality_measured_as --> C1(measurement_datum:md-92e99a)
+    C1(measurement_datum:md-92e99a) -- .iao-has_measurement_unit_label --> Un(unit-millimeter)
+    C1(measurement_datum:md-92e99a) -- .iao-has_measurement_value --> Val(2.0)
+
+    linkStyle default stroke:#0077be
+    linkStyle 0 stroke:orange
+    linkStyle 4 stroke:green
+    style Val fill:green
+    style B fill:orange

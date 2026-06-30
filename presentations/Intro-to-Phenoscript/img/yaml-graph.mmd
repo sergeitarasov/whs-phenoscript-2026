@@ -1,0 +1,15 @@
+graph LR
+    ORG("uberon-male_organism:id-1<br/>AND uberon-adult_organism<br/>AND dwc-Preserved_Specimen")
+    ORG -- .rdfs-label --> LABEL("'Genus species'")
+    ORG -- .dwc-Catalog_Number --> CAT("'CATALOG_NUMBER'")
+    ORG -- .ro-has_role_in_modeling --> TU(cdao-TU)
+    TU -- .iao-denotes --> TAX("taxrank-species:id-1")
+    TAX -- .dwc-Taxon_ID --> GBIF("'gbif.org/.../GBIF_ID'")
+    TAX -- .rdfs-label --> TLABEL("'Genus species'")
+    TAX -- .phs-represents_specimen --> ORG
+    ORG -- .phs-represents_taxon --> TAX
+    linkStyle default stroke:#0077be
+    style LABEL fill:#ffd580
+    style CAT fill:#ffd580
+    style TLABEL fill:#ffd580
+    style GBIF fill:#ffd580
