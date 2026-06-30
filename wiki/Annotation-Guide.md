@@ -94,7 +94,6 @@ In this example,  `.ro-has_characteristic` is an OP, `.rdfs-label` is an AP edge
 
 ## Ontologies Used in Species Descriptions
 
-<style scoped>table { font-size: 0.85rem; } </style>
 
 | Abbrev | Full name | Example terms |
 |--------|-----------|---------------|
